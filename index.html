@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zaloa Madariaga · Desarrolladora de Aplicaciones Web</title>
+<meta name="description" content="Portfolio de Zaloa Madariaga, desarrolladora web full-stack (PHP, MySQL, JavaScript). Proyectos: UBEK, Eskuetan, FilmPick y Zugazti.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Space+Mono:wght@400;700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#16140f;--paper:#f7f3ea;--paper-2:#efe9da;--cream:#fffdf6;--line:rgba(22,20,15,0.13);--line-soft:rgba(22,20,15,0.07);--muted:#6e6657;--accent:#b5462a;--accent-2:#3d5a4a;--gold:#b89045;--shadow:0 1px 2px rgba(22,20,15,.04),0 18px 50px rgba(22,20,15,.09);--shadow-lg:0 30px 80px rgba(22,20,15,.16)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Manrope',sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:'Fraunces',serif;font-weight:400;line-height:1.04;letter-spacing:-0.02em}
+a{color:inherit;text-decoration:none}
+.mono{font-family:'Space Mono',monospace}
+body::before{content:'';position:fixed;inset:0;z-index:9999;pointer-events:none;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+nav.top{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;justify-content:space-between;align-items:center;padding:18px 5vw;background:rgba(247,243,234,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line-soft);transition:padding .3s,background .3s}
+nav.top.scrolled{padding:12px 5vw;background:rgba(247,243,234,.95)}
+.brand{display:flex;align-items:center;gap:11px;font-family:'Fraunces',serif;font-size:20px;font-weight:500}
+.brand .dot{width:11px;height:11px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(181,70,42,.16)}
+.nav-right{display:flex;align-items:center;gap:24px}
+.nav-links{display:flex;gap:24px;align-items:center}
+.nav-links a{font-size:13px;letter-spacing:.04em;font-weight:500;position:relative;padding:3px 0;color:var(--muted);transition:color .25s}
+.nav-links a::after{content:'';position:absolute;left:0;bottom:-2px;width:0;height:1.5px;background:var(--accent);transition:width .3s}
+.nav-links a:hover{color:var(--ink)}.nav-links a:hover::after{width:100%}
+.nav-cta{background:var(--ink);color:var(--cream)!important;padding:9px 18px;border-radius:2px;font-size:12px!important;letter-spacing:.06em;transition:.3s}
+.nav-cta::after{display:none!important}.nav-cta:hover{background:var(--accent);transform:translateY(-1px)}
+.lang{display:flex;gap:2px;align-items:center;border:1px solid var(--line);border-radius:30px;padding:3px}
+.lang button{background:none;border:none;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.04em;color:var(--muted);padding:4px 9px;border-radius:30px;cursor:pointer;transition:.2s;font-weight:700}
+.lang button:hover{color:var(--ink)}.lang button.on{background:var(--accent);color:var(--cream)}
+.menu-toggle{display:none;background:none;border:none;cursor:pointer;flex-direction:column;gap:5px;padding:6px}
+.menu-toggle span{width:24px;height:2px;background:var(--ink);transition:.3s;display:block}
+.hero{min-height:100vh;position:relative;display:flex;flex-direction:column;justify-content:center;padding:160px 5vw 90px}
+.hero::before{content:'';position:absolute;inset:0;z-index:0;background:radial-gradient(ellipse 60% 50% at 78% 18%,rgba(61,90,74,.13),transparent 60%),radial-gradient(ellipse 50% 50% at 12% 88%,rgba(181,70,42,.10),transparent 55%)}
+.hero-inner{position:relative;z-index:2;max-width:1240px;width:100%;margin:0 auto}
+.eyebrow{display:inline-flex;align-items:center;gap:13px;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-2);font-weight:700;margin-bottom:30px}
+.eyebrow::before{content:'';width:34px;height:1.5px;background:var(--accent-2)}
+.hero h1{font-size:clamp(48px,9vw,128px);line-height:.9;font-weight:300;margin-bottom:34px;letter-spacing:-.03em}
+.hero h1 em{font-style:italic;color:var(--accent);font-weight:400}
+.hero .lead{font-size:clamp(17px,2vw,22px);max-width:620px;color:var(--ink);opacity:.82;font-weight:300;line-height:1.55;margin-bottom:42px}
+.hero .lead strong{font-weight:600;opacity:1}
+.hero-cta{display:flex;gap:18px;flex-wrap:wrap;align-items:center}
+.btn-primary{background:var(--ink);color:var(--cream);padding:17px 34px;border-radius:2px;font-size:13px;letter-spacing:.08em;font-weight:600;text-transform:uppercase;display:inline-flex;align-items:center;gap:11px;transition:.3s}
+.btn-primary:hover{background:var(--accent);gap:17px}.btn-primary svg{width:14px;height:14px;transition:transform .3s}.btn-primary:hover svg{transform:translateX(3px)}
+.btn-ghost{padding:17px 4px;font-size:13px;letter-spacing:.08em;font-weight:600;text-transform:uppercase;border-bottom:1.5px solid var(--ink);transition:.3s}
+.btn-ghost:hover{color:var(--accent);border-color:var(--accent);padding-left:10px}
+.hero-meta{display:flex;gap:48px;flex-wrap:wrap;margin-top:72px;padding-top:34px;border-top:1px solid var(--line)}
+.hero-meta .item .k{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.hero-meta .item .v{font-family:'Fraunces',serif;font-size:clamp(24px,3vw,34px);font-weight:400}
+.hero-meta .item .v small{font-size:15px;color:var(--muted);font-family:'Manrope';font-weight:500}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1)}
+.reveal.in{opacity:1;transform:none}
+section.block{padding:100px 5vw;position:relative}
+.shell{max-width:1240px;margin:0 auto}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:40px;margin-bottom:56px;flex-wrap:wrap}
+.sec-head .label{font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.sec-head .label .num{color:var(--muted)}
+.sec-head h2{font-size:clamp(34px,5vw,62px);font-weight:300;letter-spacing:-.025em}
+.sec-head h2 em{font-style:italic;color:var(--accent-2)}
+.sec-head p{max-width:380px;color:var(--muted);font-size:15px;line-height:1.6}
+#about{background:var(--paper-2)}
+.about-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:70px;align-items:start}
+.about-lead{font-family:'Fraunces',serif;font-size:clamp(22px,3vw,32px);font-weight:300;line-height:1.35;letter-spacing:-.01em}
+.about-lead em{font-style:italic;color:var(--accent)}
+.about-body{margin-top:28px;color:var(--ink);opacity:.85;font-size:16px;line-height:1.72;font-weight:300}
+.about-body p+p{margin-top:18px}
+.about-side{position:sticky;top:110px}
+.fact-card{background:var(--cream);border:1px solid var(--line);border-radius:4px;padding:26px 28px;box-shadow:var(--shadow)}
+.fact-card h4{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-bottom:18px}
+.fact-row{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid var(--line-soft);font-size:14px}
+.fact-row:last-child{border-bottom:none}.fact-row .label{color:var(--muted)}.fact-row .val{font-weight:600;text-align:right}
+.stack-wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.stack-cat{background:var(--cream);padding:30px 28px;transition:background .3s}
+.stack-cat:hover{background:var(--paper)}
+.stack-cat .ico{width:38px;height:38px;border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:18px;font-size:19px;background:rgba(181,70,42,.1);color:var(--accent)}
+.stack-cat:nth-child(2) .ico{background:rgba(61,90,74,.12);color:var(--accent-2)}
+.stack-cat:nth-child(3) .ico{background:rgba(184,144,69,.16);color:var(--gold)}
+.stack-cat:nth-child(4) .ico{background:rgba(22,20,15,.08);color:var(--ink)}
+.stack-cat h4{font-family:'Fraunces',serif;font-size:21px;font-weight:500;margin-bottom:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-family:'Space Mono',monospace;font-size:12px;padding:5px 11px;border:1px solid var(--line);border-radius:40px;color:var(--ink);background:var(--paper)}
+#work{background:var(--paper)}
+.project{padding:70px 0;border-top:1px solid var(--line)}
+.project:last-child{border-bottom:1px solid var(--line)}
+.p-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:60px;align-items:start}
+.project.flip .p-grid{grid-template-columns:1.15fr 1fr}
+.project.flip .p-text{order:2}.project.flip .p-visual{order:1}
+.p-text .p-index{font-family:'Space Mono',monospace;font-size:13px;color:var(--muted);letter-spacing:.1em;margin-bottom:16px}
+.p-text .p-tag{display:inline-block;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:5px 12px;border-radius:40px;margin-bottom:18px;font-weight:700}
+.p-text h3{font-size:clamp(30px,4vw,46px);font-weight:300;margin-bottom:8px;letter-spacing:-.02em}
+.p-text .p-sub{font-family:'Fraunces',serif;font-style:italic;font-size:18px;color:var(--accent-2);margin-bottom:20px}
+.p-text .p-desc{color:var(--ink);opacity:.84;font-size:15.5px;line-height:1.68;font-weight:300;margin-bottom:22px}
+.p-feats{list-style:none;margin-bottom:26px}
+.p-feats li{position:relative;padding-left:22px;font-size:14.5px;line-height:1.5;margin-bottom:9px;color:var(--ink);opacity:.9}
+.p-feats li::before{content:'';position:absolute;left:0;top:9px;width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.p-stack{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:24px}
+.p-stack .t{font-family:'Space Mono',monospace;font-size:11.5px;padding:4px 10px;background:var(--cream);border:1px solid var(--line);border-radius:3px;color:var(--muted)}
+.p-links{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+.p-link{font-size:13px;font-weight:600;letter-spacing:.04em;display:inline-flex;align-items:center;gap:7px;border-bottom:1.5px solid transparent;padding-bottom:2px;transition:.25s}
+.p-link:hover{border-color:var(--ink)}.p-link svg{width:13px;height:13px}
+/* gallery */
+.gallery{position:relative}
+.g-main{border-radius:8px;overflow:hidden;box-shadow:var(--shadow-lg);border:1px solid var(--line);background:#e8e2d4;cursor:zoom-in}
+.g-main img{display:block;width:100%;height:auto;aspect-ratio:1440/900;object-fit:cover;object-position:top;transition:transform .5s}
+.g-main:hover img{transform:scale(1.015)}
+.g-thumbs{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+.thumb{border:1px solid var(--line);border-radius:4px;overflow:hidden;padding:0;background:none;cursor:pointer;width:78px;height:50px;transition:.2s;opacity:.7;flex:0 0 auto}
+.thumb img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+.thumb:hover{opacity:1}
+.thumb.on{opacity:1;border-color:var(--accent);box-shadow:0 0 0 2px rgba(181,70,42,.2)}
+/* lightbox */
+#lightbox{position:fixed;inset:0;z-index:9000;background:rgba(15,13,10,.93);display:none;align-items:center;justify-content:center;padding:40px;flex-direction:column}
+#lightbox.open{display:flex}
+#lightbox img{max-width:92vw;max-height:82vh;border-radius:4px;box-shadow:0 30px 90px rgba(0,0,0,.5)}
+#lightbox .lb-close{position:absolute;top:24px;right:34px;color:#f7f3ea;font-size:34px;cursor:pointer;line-height:1;background:none;border:none}
+#lightbox .lb-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(247,243,234,.12);color:#f7f3ea;border:none;width:52px;height:52px;border-radius:50%;font-size:24px;cursor:pointer;transition:.2s}
+#lightbox .lb-nav:hover{background:rgba(247,243,234,.25)}
+#lightbox .lb-prev{left:28px}#lightbox .lb-next{right:28px}
+#lightbox .lb-cap{color:#cfc6b3;font-family:'Space Mono',monospace;font-size:12px;margin-top:16px;letter-spacing:.05em}
+#process{background:var(--ink);color:var(--paper)}
+#process .sec-head h2{color:var(--paper)}#process .sec-head h2 em{color:var(--gold)}#process .sec-head .label{color:var(--gold)}#process .sec-head p{color:rgba(247,243,234,.6)}
+.proc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1px;background:rgba(247,243,234,.14);border:1px solid rgba(247,243,234,.14);border-radius:4px;overflow:hidden}
+.proc{background:var(--ink);padding:32px 28px;transition:background .3s}
+.proc:hover{background:#211e17}
+.proc .n{font-family:'Space Mono',monospace;font-size:12px;color:var(--gold);letter-spacing:.1em;margin-bottom:18px}
+.proc h4{font-family:'Fraunces',serif;font-size:22px;font-weight:400;margin-bottom:12px;color:var(--paper)}
+.proc p{font-size:14px;color:rgba(247,243,234,.62);line-height:1.6;font-weight:300}
+#contact{background:var(--paper-2);text-align:center}
+#contact .label{justify-content:center}
+#contact h2{font-size:clamp(38px,7vw,86px);font-weight:300;letter-spacing:-.03em;margin-bottom:24px;line-height:.95}
+#contact h2 em{font-style:italic;color:var(--accent)}
+#contact .lead{max-width:560px;margin:0 auto 44px;color:var(--muted);font-size:17px;line-height:1.6;font-weight:300}
+.contact-links{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.c-btn{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;border:1.5px solid var(--ink);border-radius:2px;font-size:14px;font-weight:600;letter-spacing:.02em;transition:.3s}
+.c-btn:hover{background:var(--ink);color:var(--cream);transform:translateY(-2px)}
+.c-btn.fill{background:var(--ink);color:var(--cream)}.c-btn.fill:hover{background:var(--accent);border-color:var(--accent)}
+.c-btn svg{width:16px;height:16px}
+footer{padding:40px 5vw;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;background:var(--paper)}
+footer .f-brand{font-family:'Fraunces',serif;font-size:17px}
+footer .f-meta{font-family:'Space Mono',monospace;font-size:11px;color:var(--muted);letter-spacing:.04em}
+@media(max-width:920px){.about-grid{grid-template-columns:1fr;gap:40px}.about-side{position:static}.p-grid,.project.flip .p-grid{grid-template-columns:1fr;gap:30px}.project.flip .p-text,.project.flip .p-visual{order:initial}.p-visual{order:-1}}
+@media(max-width:680px){.nav-links{display:none}.menu-toggle{display:flex}.nav-links.open{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:var(--cream);padding:24px 5vw;gap:20px;border-bottom:1px solid var(--line);box-shadow:var(--shadow)}.hero-meta{gap:30px}.hero-meta .item{flex:1;min-width:120px}section.block{padding:70px 5vw}}
+</style>
+</head>
+<body>
+
+<nav class="top" id="nav">
+  <a href="#top" class="brand"><span class="dot"></span> Zaloa Madariaga</a>
+  <div class="nav-right">
+    <div class="nav-links" id="navlinks">
+      <a href="#about" data-i18n="nav_about">Sobre mí</a>
+      <a href="#stack" data-i18n="nav_stack">Stack</a>
+      <a href="#work" data-i18n="nav_work">Proyectos</a>
+      <a href="#process" data-i18n="nav_process">Cómo trabajo</a>
+      <a href="#contact" class="nav-cta" data-i18n="nav_contact">Contacto</a>
+    </div>
+    <div class="lang" id="lang">
+      <button data-lang="es" class="on">ES</button>
+      <button data-lang="eu">EU</button>
+      <button data-lang="en">EN</button>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-inner">
+    <span class="eyebrow reveal" data-i18n="hero_eyebrow">Desarrolladora de Aplicaciones Web · DAW</span>
+    <h1 class="reveal" data-i18n-html="hero_title">Construyo aplicaciones<br>web <em>de principio a fin</em>.</h1>
+    <p class="lead reveal" data-i18n-html="hero_lead">Desarrolladora full-stack centrada en <strong>PHP, MySQL y JavaScript</strong>. Diseño la base de datos, levanto la API, programo la lógica y cuido la interfaz hasta el último píxel.</p>
+    <div class="hero-cta reveal">
+      <a href="#work" class="btn-primary"><span data-i18n="hero_cta1">Ver proyectos</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a href="#contact" class="btn-ghost" data-i18n="hero_cta2">Contacto</a>
+    </div>
+    <div class="hero-meta">
+      <div class="item reveal"><div class="k" data-i18n="meta_k1">Especialidad</div><div class="v" data-i18n="meta_v1">Full-stack web</div></div>
+      <div class="item reveal"><div class="k" data-i18n="meta_k2">Stack principal</div><div class="v">PHP · MySQL · JS</div></div>
+      <div class="item reveal"><div class="k" data-i18n="meta_k3">Proyectos</div><div class="v">4 <small data-i18n="meta_v3">destacados</small></div></div>
+      <div class="item reveal"><div class="k" data-i18n="meta_k4">Ubicación</div><div class="v">Bizkaia <small data-i18n="meta_v4">· remoto</small></div></div>
+    </div>
+  </div>
+</header>
+
+<section class="block" id="about">
+  <div class="shell">
+    <div class="sec-head">
+      <div>
+        <div class="label"><span class="num">01</span> / <span data-i18n="nav_about">Sobre mí</span></div>
+        <h2 data-i18n-html="about_h">Del <em>esquema de la BBDD</em><br>hasta el último detalle de la UI.</h2>
+      </div>
+      <p data-i18n="about_p">En último curso de Desarrollo de Aplicaciones Web, con experiencia real construyendo proyectos full-stack. Trabajo en castellano, euskera e inglés. Disponible para prácticas.</p>
+    </div>
+    <div class="about-grid">
+      <div>
+        <p class="about-lead" data-i18n-html="about_lead"><em>Full-stack</em> de principio a fin: pensar los datos, exponerlos con una API limpia y convertirlos en una interfaz que apetezca usar.</p>
+        <div class="about-body" data-i18n-html="about_body">
+          <p>He construido aplicaciones e interfaces completas con <strong>PHP, MySQL y JavaScript</strong>: autenticación, APIs REST, bases de datos relacionales con integridad referencial y frontends responsive. Ahí he aprendido sobre arquitectura, normalización y por qué cada decisión técnica tiene consecuencias.</p>
+          <p>Trabajo con <strong>JavaScript vanilla</strong> —sin frameworks— para dominar el DOM, el estado y el rendimiento antes de apoyarme en abstracciones. Me importa la accesibilidad, el responsive y dejar el código ordenado para quien venga detrás.</p>
+        </div>
+      </div>
+      <aside class="about-side">
+        <div class="fact-card">
+          <h4 data-i18n="facts_h">// De un vistazo</h4>
+          <div class="fact-row"><span class="label" data-i18n="facts_l1">Formación</span><span class="val" data-i18n="facts_v1">DAW · Desarrollo de Apps Web</span></div>
+          <div class="fact-row"><span class="label" data-i18n="facts_l2">Perfil</span><span class="val" data-i18n="facts_v2">Full-stack júnior</span></div>
+          <div class="fact-row"><span class="label" data-i18n="facts_l3">Backend</span><span class="val">PHP · MySQL · REST</span></div>
+          <div class="fact-row"><span class="label" data-i18n="facts_l4">Frontend</span><span class="val">JS · HTML5 · CSS3</span></div>
+          <div class="fact-row"><span class="label" data-i18n="facts_l5">Idiomas</span><span class="val">ES · EU · EN</span></div>
+          <div class="fact-row"><span class="label" data-i18n="facts_l6">Modalidad</span><span class="val" data-i18n="facts_v6">Presencial · Híbrido · Remoto</span></div>
+          <div class="fact-row"><span class="label" data-i18n="facts_l7">Disponibilidad</span><span class="val" data-i18n="facts_v7">Disponible para prácticas · junior</span></div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="stack">
+  <div class="shell">
+    <div class="sec-head">
+      <div>
+        <div class="label"><span class="num">02</span> / <span data-i18n="nav_stack">Stack</span></div>
+        <h2 data-i18n-html="stack_h">Herramientas con las que <em>construyo</em>.</h2>
+      </div>
+      <p data-i18n="stack_p">Lo que uso a diario, ordenado por dónde encaja en el proyecto.</p>
+    </div>
+    <div class="stack-wrap">
+      <div class="stack-cat"><div class="ico">&#9881;</div><h4 data-i18n="stack_c1">Backend</h4><div class="chips"><span class="chip">PHP</span><span class="chip">REST API</span><span class="chip">Sesiones</span><span class="chip">CRUD</span><span class="chip">JSON</span></div></div>
+      <div class="stack-cat"><div class="ico">&#9638;</div><h4 data-i18n="stack_c2">Base de datos</h4><div class="chips"><span class="chip">MySQL</span><span class="chip">SQL</span><span class="chip">Relacional</span><span class="chip">FK</span></div></div>
+      <div class="stack-cat"><div class="ico">&#9672;</div><h4 data-i18n="stack_c3">Frontend</h4><div class="chips"><span class="chip">JavaScript ES6+</span><span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">Responsive</span><span class="chip">DOM</span><span class="chip">i18n</span></div></div>
+      <div class="stack-cat"><div class="ico">&#8984;</div><h4 data-i18n="stack_c4">Herramientas</h4><div class="chips"><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">Figma</span><span class="chip">VS Code</span><span class="chip">TMDb API</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="work">
+  <div class="shell">
+    <div class="sec-head">
+      <div>
+        <div class="label"><span class="num">03</span> / <span data-i18n="nav_work">Proyectos</span></div>
+        <h2 data-i18n-html="work_h">Algunos de mis <em>proyectos</em>.</h2>
+      </div>
+      <p data-i18n="work_p">Cuatro proyectos reales. Cada uno resuelve un problema concreto y está hecho para usarse. Pulsa cualquier imagen para verla en grande.</p>
+    </div>
+
+    <article class="project reveal" id="proj-ubek">
+      <div class="p-grid">
+        <div class="p-text">
+          <div class="p-index">P-01 — <span data-i18n="ubek_label">Proyecto</span></div>
+          <span class="p-tag" style="background:rgba(228,184,42,.18);color:#9a7510">Web · EU/ES</span>
+          <h3>UBEK</h3>
+          <div class="p-sub" data-i18n="ubek_sub">—</div>
+          <p class="p-desc" data-i18n="ubek_desc">—</p>
+          <ul class="p-feats" data-i18n-list="ubek_feats"></ul>
+          <div class="p-stack"><span class="t">PHP</span><span class="t">HTML5</span><span class="t">CSS3</span><span class="t">JavaScript</span><span class="t">i18n</span><span class="t">Responsive</span></div>
+          <div class="p-links" id="links-ubek"></div>
+        </div>
+        <div class="p-visual"><div class="gallery" data-proj="ubek">
+        <div class="g-main"><img id="main-ubek" src="images/ubek_01_inicio_es.jpg" alt="" onclick="openLight('ubek',currentIdx['ubek'])"></div>
+        <div class="g-thumbs"><button class="thumb on" onclick="setMain('ubek',0)"><img src="images/ubek_01_inicio_es.jpg" alt="" loading="lazy"></button><button class="thumb" onclick="setMain('ubek',1)"><img src="images/ubek_03_nor_es.jpg" alt="" loading="lazy"></button><button class="thumb" onclick="setMain('ubek',2)"><img src="images/ubek_02_filosofia_es.jpg" alt="" loading="lazy"></button><button class="thumb" onclick="setMain('ubek',3)"><img src="images/ubek_04_proiektuak_es.jpg" alt="" loading="lazy"></button><button class="thumb" onclick="setMain('ubek',4)"><img src="images/ubek_05_bazkidetu_es.jpg" alt="" loading="lazy"></button><button class="thumb" onclick="setMain('ubek',5)"><img src="images/ubek_06_dohaintza_es.jpg" alt="" loading="lazy"></button></div>
+      </div></div>
+      </div>
+    </article>
+
+    <article class="project flip reveal" id="proj-eskuetan">
+      <div class="p-grid">
+        <div class="p-text">
+          <div class="p-index">P-02 — <span data-i18n="eskuetan_label">Proyecto</span></div>
+          <span class="p-tag" style="background:rgba(228,160,42,.16);color:#b07410">E-commerce · ES/EU/EN</span>
+          <h3>Eskuetan</h3>
+          <div class="p-sub" data-i18n="eskuetan_sub">—</div>
+          <p class="p-desc" data-i18n="eskuetan_desc">—</p>
+          <ul class="p-feats" data-i18n-list="eskuetan_feats"></ul>
+          <div class="p-stack"><span class="t">JavaScript</span><span class="t">HTML5</span><span class="t">CSS3</span><span class="t">localStorage</span><span class="t">i18n</span></div>
+          <div class="p-links" id="links-eskuetan"></div>
+        </div>
+        <div class="p-visual"><div class="gallery" data-proj="eskuetan">
+        <div class="g-main"><img id="main-eskuetan" src="images/eskuetan_01_home_es.jpg" alt="" onclick="openLight('eskuetan',currentIdx['eskuetan'])"></div>
+        <div class="g-thumbs"><button class="thumb on" onclick="setMain('eskuetan',0)"><img src="images/eskuetan_01_home_es.jpg" alt="" loading="lazy"></button><button class="thumb" onclick="setMain('eskuetan',1)"><img src="images/eskuetan_02_catalogo_es.jpg" alt="" loading="lazy"></button><button class="thumb" onclick="setMain('eskuetan',2)"><img src="images/eskuetan_07_detalle_es.jpg" alt="" loading="lazy"></button><button class="thumb" onclick="setMain('eskuetan',3)"><img src="images/eskuetan_03_carrito_es.jpg" alt="" loading="lazy"></button><button class="thumb" onclick="setMain('eskuetan',4)"><img src="images/eskuetan_04_favoritos_es.jpg" alt="" loading="lazy"></button><button class="thumb" onclick="setMain('eskuetan',5)"><img src="images/eskuetan_05_vender_es.jpg" alt="" loading="lazy"></button><button class="thumb" onclick="setMain('eskuetan',6)"><img src="images/eskuetan_06_sobre_es.jpg" alt="" loading="lazy"></button></div>
+      </div></div>
+      </div>
+    </article>
+
+    <article class="project reveal" id="proj-filmpick">
+      <div class="p-grid">
+        <div class="p-text">
+          <div class="p-index">P-03 — <span data-i18n="filmpick_label">Proyecto</span></div>
+          <span class="p-tag" style="background:rgba(181,70,42,.1);color:var(--accent)">App · API externa</span>
+          <h3>FilmPick</h3>
+          <div class="p-sub" data-i18n="filmpick_sub">—</div>
+          <p class="p-desc" data-i18n="filmpick_desc">—</p>
+          <ul class="p-feats" data-i18n-list="filmpick_feats"></ul>
+          <div class="p-stack"><span class="t">JavaScript</span><span class="t">TMDb API</span><span class="t">Fetch</span><span class="t">localStorage</span><span class="t">CSS3</span></div>
+          <div class="p-links" id="links-filmpick"></div>
+        </div>
+        <div class="p-visual"><div class="gallery" data-proj="filmpick">
+        <div class="g-main"><img id="main-filmpick" src="images/filmpick_01_discover_es.jpg" alt="" onclick="openLight('filmpick',currentIdx['filmpick'])"></div>
+        <div class="g-thumbs"><button class="thumb on" onclick="setMain('filmpick',0)"><img src="images/filmpick_01_discover_es.jpg" alt="" loading="lazy"></button><button class="thumb" onclick="setMain('filmpick',1)"><img src="images/filmpick_05_resultados_es.jpg" alt="" loading="lazy"></button><button class="thumb" onclick="setMain('filmpick',2)"><img src="images/filmpick_02_ruleta_es.jpg" alt="" loading="lazy"></button><button class="thumb" onclick="setMain('filmpick',3)"><img src="images/filmpick_03_favoritos_es.jpg" alt="" loading="lazy"></button><button class="thumb" onclick="setMain('filmpick',4)"><img src="images/filmpick_04_vistas_es.jpg" alt="" loading="lazy"></button></div>
+      </div></div>
+      </div>
+    </article>
+
+    <article class="project flip reveal" id="proj-zugazti">
+      <div class="p-grid">
+        <div class="p-text">
+          <div class="p-index">P-04 — <span data-i18n="zugazti_label">Proyecto</span></div>
+          <span class="p-tag" style="background:rgba(61,90,74,.12);color:var(--accent-2)">Landing · Diseño editorial</span>
+          <h3>Zugazti</h3>
+          <div class="p-sub" data-i18n="zugazti_sub">—</div>
+          <p class="p-desc" data-i18n="zugazti_desc">—</p>
+          <ul class="p-feats" data-i18n-list="zugazti_feats"></ul>
+          <div class="p-stack"><span class="t">HTML5</span><span class="t">CSS3</span><span class="t">JavaScript</span><span class="t">Responsive</span><span class="t">SEO</span></div>
+          <div class="p-links" id="links-zugazti"></div>
+        </div>
+        <div class="p-visual"><div class="gallery" data-proj="zugazti">
+        <div class="g-main"><img id="main-zugazti" src="images/zugazti_01_hero_es.jpg" alt="" onclick="openLight('zugazti',currentIdx['zugazti'])"></div>
+        <div class="g-thumbs"><button class="thumb on" onclick="setMain('zugazti',0)"><img src="images/zugazti_01_hero_es.jpg" alt="" loading="lazy"></button><button class="thumb" onclick="setMain('zugazti',1)"><img src="images/zugazti_02_casa_es.jpg" alt="" loading="lazy"></button><button class="thumb" onclick="setMain('zugazti',2)"><img src="images/zugazti_03_habitaciones_es.jpg" alt="" loading="lazy"></button><button class="thumb" onclick="setMain('zugazti',3)"><img src="images/zugazti_04_servicios_es.jpg" alt="" loading="lazy"></button><button class="thumb" onclick="setMain('zugazti',4)"><img src="images/zugazti_05_entorno_es.jpg" alt="" loading="lazy"></button><button class="thumb" onclick="setMain('zugazti',5)"><img src="images/zugazti_06_precios_es.jpg" alt="" loading="lazy"></button><button class="thumb" onclick="setMain('zugazti',6)"><img src="images/zugazti_07_contacto_es.jpg" alt="" loading="lazy"></button></div>
+      </div></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="block" id="process">
+  <div class="shell">
+    <div class="sec-head">
+      <div>
+        <div class="label"><span class="num">04</span> / <span data-i18n="nav_process">Cómo trabajo</span></div>
+        <h2 data-i18n-html="proc_h">Un proyecto, <em>cuatro fases</em>.</h2>
+      </div>
+      <p data-i18n="proc_p">La forma en la que abordo cualquier desarrollo, del primer boceto al despliegue.</p>
+    </div>
+    <div class="proc-grid">
+      <div class="proc"><div class="n">01</div><h4 data-i18n="proc_1h">Entender</h4><p data-i18n="proc_1p">Defino el problema y los objetivos.</p></div>
+      <div class="proc"><div class="n">02</div><h4 data-i18n="proc_2h">Modelar</h4><p data-i18n="proc_2p">Diseño la base de datos y la arquitectura de la API.</p></div>
+      <div class="proc"><div class="n">03</div><h4 data-i18n="proc_3h">Construir</h4><p data-i18n="proc_3p">Programo backend y frontend en iteraciones.</p></div>
+      <div class="proc"><div class="n">04</div><h4 data-i18n="proc_4h">Pulir</h4><p data-i18n="proc_4p">Pruebo, optimizo y reviso el detalle visual.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="contact">
+  <div class="shell">
+    <div class="label"><span class="num">05</span> / <span data-i18n="contact_label">Contacto</span></div>
+    <h2 data-i18n-html="contact_h">Dónde <em>encontrarme</em>.</h2>
+    <p class="lead" data-i18n="contact_lead">Estoy dando mis primeros pasos como desarrolladora web y busco un proyecto donde crecer. Si crees que puedo encajar, cuéntame: estoy a un mensaje.</p>
+    <div class="contact-links">
+      <a href="mailto:zmadariaga@gmail.com" class="c-btn fill">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+        zmadariaga@gmail.com
+      </a>
+      <a href="tel:+34646218511" class="c-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
+        646 218 511
+      </a>
+      <a href="https://github.com/ZaloaMadariagaIbarzabal/portfolio.git" target="_blank" rel="noopener" class="c-btn">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.09.66-.22.66-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02.8-.22 1.65-.33 2.5-.33.85 0 1.7.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.16.58.67.48A10 10 0 0022 12c0-5.52-4.48-10-10-10z"/></svg>
+        github.com/ZaloaMadariagaIbarzabal/portfolio.git
+      </a>
+      <a href="https://www.linkedin.com/in/zaloa-madariaga-ibarzabal-a24075382" target="_blank" rel="noopener" class="c-btn">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14zM8.34 17V10.3H6.1V17h2.24zM7.22 9.27a1.3 1.3 0 100-2.6 1.3 1.3 0 000 2.6zM18 17v-3.67c0-1.96-.42-3.47-2.71-3.47-1.1 0-1.84.6-2.14 1.18h-.03V10.3H10.9V17h2.24v-3.32c0-.88.17-1.73 1.26-1.73 1.07 0 1.09 1 1.09 1.79V17H18z"/></svg>
+        LinkedIn
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="f-brand">Zaloa Madariaga</div>
+  <div class="f-meta" data-i18n="footer">Desarrolladora Web · PHP · MySQL · JavaScript · Bizkaia 2026</div>
+</footer>
+
+<div id="lightbox" role="dialog" aria-modal="true">
+  <button class="lb-close" onclick="closeLight()" aria-label="Cerrar">&times;</button>
+  <button class="lb-nav lb-prev" onclick="lightStep(-1)" aria-label="Anterior">&#8249;</button>
+  <img id="lb-img" src="" alt="">
+  <button class="lb-nav lb-next" onclick="lightStep(1)" aria-label="Siguiente">&#8250;</button>
+  <div class="lb-cap" id="lb-cap"></div>
+</div>
+
+<script>
+// ====== GALERÍAS (multi-idioma) ======
+// claves base sin idioma; el sufijo _<lang>.jpg se añade dinámicamente
+const GALBASE={
+ "ubek":["ubek_01_inicio","ubek_03_nor","ubek_02_filosofia","ubek_04_proiektuak","ubek_05_bazkidetu","ubek_06_dohaintza"],
+ "eskuetan":["eskuetan_01_home","eskuetan_02_catalogo","eskuetan_07_detalle","eskuetan_03_carrito","eskuetan_04_favoritos","eskuetan_05_vender","eskuetan_06_sobre"],
+ "filmpick":["filmpick_01_discover","filmpick_02_ruleta","filmpick_03_favoritos","filmpick_04_vistas"],
+ "zugazti":["zugazti_01_hero","zugazti_02_casa","zugazti_03_habitaciones","zugazti_04_servicios","zugazti_05_entorno","zugazti_06_precios","zugazti_07_contacto"]
+};
+let curLang='es';
+function imgPath(base){return 'images/'+base+'_'+curLang+'.jpg';}
+const currentIdx={ubek:0,eskuetan:0,filmpick:0,zugazti:0};
+function refreshGalleries(){
+  // actualiza imagen principal y miniaturas de cada proyecto al idioma actual
+  Object.keys(GALBASE).forEach(proj=>{
+    const m=document.getElementById('main-'+proj);
+    if(m) m.src=imgPath(GALBASE[proj][currentIdx[proj]]);
+    document.querySelectorAll('.gallery[data-proj="'+proj+'"] .thumb img').forEach((img,k)=>{
+      if(GALBASE[proj][k]) img.src=imgPath(GALBASE[proj][k]);
+    });
+  });
+}
+function setMain(proj,i){
+  currentIdx[proj]=i;
+  document.getElementById('main-'+proj).src=imgPath(GALBASE[proj][i]);
+  document.querySelectorAll('.gallery[data-proj="'+proj+'"] .thumb').forEach((t,k)=>t.classList.toggle('on',k===i));
+}
+// ====== LIGHTBOX ======
+let lbProj=null;
+function openLight(proj,i){lbProj=proj;currentIdx[proj]=i;showLb();document.getElementById('lightbox').classList.add('open');document.body.style.overflow='hidden';}
+function closeLight(){document.getElementById('lightbox').classList.remove('open');document.body.style.overflow='';}
+function showLb(){const i=currentIdx[lbProj];document.getElementById('lb-img').src=imgPath(GALBASE[lbProj][i]);document.getElementById('lb-cap').textContent=(i+1)+' / '+GALBASE[lbProj].length+'  ·  '+lbProj.toUpperCase();}
+function lightStep(d){const n=GALBASE[lbProj].length;currentIdx[lbProj]=(currentIdx[lbProj]+d+n)%n;showLb();setMain(lbProj,currentIdx[lbProj]);}
+document.getElementById('lightbox').addEventListener('click',e=>{if(e.target.id==='lightbox')closeLight();});
+document.addEventListener('keydown',e=>{if(!document.getElementById('lightbox').classList.contains('open'))return;if(e.key==='Escape')closeLight();if(e.key==='ArrowRight')lightStep(1);if(e.key==='ArrowLeft')lightStep(-1);});
+
+// ====== i18n ======
+const PROJ_DATA={
+ es:{
+  ubek_label:"Proyecto real · comunidad energética",
+  ubek_sub:"Web de la comunidad energética de Uribe-Butroe",
+  ubek_desc:"Web institucional bilingüe (euskera/castellano) para UBEK, la comunidad energética de la comarca de Uribe-Butroe. Presenta el proyecto cooperativo, explica el autoconsumo compartido y permite a los vecinos y vecinas hacerse socios/as o donar.",
+  ubek_feats:["Sitio bilingüe completo EU/ES con cambio de idioma","Seis páginas: inicio, filosofía, quiénes somos, proyectos, alta de socios/as y donaciones","Formularios de contacto y alta procesados con PHP","Sistema de includes (header/footer reutilizables) en JavaScript","Diseño responsive y contenido orientado a la captación de socios/as"],
+  eskuetan_label:"Proyecto personal",
+  eskuetan_sub:"Tienda online de ropa de segunda mano · Bilbo",
+  eskuetan_desc:"E-commerce completo para una tienda de ropa vintage en Bilbao. Catálogo de 25 productos con fichas, carrito, lista de deseos y checkout, en JavaScript vanilla y disponible en tres idiomas.",
+  eskuetan_feats:["Interfaz trilingüe completa: castellano, euskera e inglés (i18n)","Carrito con cantidades, lista de deseos persistente y checkout","Filtros por categoría, talla, precio y buscador en tiempo real","Fichas de producto, destacados y sistema de favoritos","Diseño responsive con identidad visual propia"],
+  filmpick_label:"Proyecto personal",
+  filmpick_sub:"Recomendador de películas con criterios reales",
+  filmpick_desc:"Aplicación que acaba con el scroll infinito: elige qué película ver según con quién la ves, estado de ánimo, género, duración y plataforma, y ordena por compatibilidad. Combina un catálogo curado propio con la API de The Movie Database.",
+  filmpick_feats:["Doble fuente de datos: catálogo curado (80 películas) + API de TMDb","Ranking por compatibilidad según cuántos filtros cumple cada película","Favoritos, lista de vistas y modo «ruleta»","Compartir película por enlace y multiusuario local","Sin frameworks ni dependencias: JS vanilla puro y responsive"],
+  zugazti_label:"Proyecto personal",
+  zugazti_sub:"Web de casa rural en Gamiz-Fika, Bizkaia",
+  zugazti_desc:"Landing page completa con enfoque de diseño editorial cuidado: tipografía con carácter, paleta orgánica inspirada en el entorno y micro-animaciones. Pensada para transmitir calma y convertir visitas en reservas.",
+  zugazti_feats:["Diseño editorial premium con tipografías serif/sans contrastadas","Animaciones de entrada escalonadas y efectos al hacer scroll","Estructura completa: hero, habitaciones, servicios, entorno y precios","SEO básico cuidado y multilingüe","Optimizada para rendimiento: CSS puro, sin librerías pesadas"]
+ },
+ eu:{
+  ubek_label:"Benetako proiektua · energia-komunitatea",
+  ubek_sub:"Uribe-Butroeko energia-komunitatearen weba",
+  ubek_desc:"UBEK-erako web instituzional elebiduna (euskara/gaztelania), Uribe-Butroe eskualdeko energia-komunitatea. Proiektu kooperatiboa aurkezten du, autokontsumo partekatua azaltzen du eta auzokideei bazkidetzeko edo dohaintzak egiteko aukera ematen die.",
+  ubek_feats:["EU/ES gune elebidun osoa hizkuntza-aldaketarekin","Sei orri: hasiera, filosofia, nor garen, proiektuak, bazkidetzea eta dohaintzak","Harremanetarako eta altarako inprimakiak PHP-rekin","Includes sistema (header/footer berrerabilgarriak) JavaScripten","Diseinu responsivea eta bazkideak erakartzera bideratutako edukia"],
+  eskuetan_label:"Proiektu pertsonala",
+  eskuetan_sub:"Bigarren eskuko arropa denda online · Bilbo",
+  eskuetan_desc:"Bilboko arropa vintage denda baterako e-commerce osoa. 25 produktuko katalogoa fitxekin, saskia, gogoko zerrenda eta ordainketa, JavaScript vanillan eta hiru hizkuntzatan.",
+  eskuetan_feats:["Interfaze eleaniztun osoa: gaztelania, euskara eta ingelesa (i18n)","Saskia kantitateekin, gogoko zerrenda iraunkorra eta ordainketa","Iragazkiak kategoria, talla eta prezioaren arabera, eta bilatzaile zuzena","Produktu-fitxak, nabarmenduak eta gogokoen sistema","Diseinu responsivea nortasun bisual propioarekin"],
+  filmpick_label:"Proiektu pertsonala",
+  filmpick_sub:"Film gomendatzailea benetako irizpideekin",
+  filmpick_desc:"Scroll amaigabearekin amaitzen duen aplikazioa: aukeratu zer film ikusi norekin ikusten duzun, aldartea, generoa, iraupena eta plataformaren arabera, eta bateragarritasunaren arabera ordenatzen du. Berezko katalogo zaindua eta The Movie Database APIa konbinatzen ditu.",
+  filmpick_feats:["Datu-iturri bikoitza: katalogo zaindua (80 film) + TMDb APIa","Bateragarritasun-sailkapena film bakoitzak betetzen dituen iragazkien arabera","Gogokoak, ikusitakoen zerrenda eta «erruleta» modua","Filma estekaren bidez partekatu eta erabiltzaile anitz lokalean","Frameworkik gabe: JS vanilla hutsa eta responsivea"],
+  zugazti_label:"Proiektu pertsonala",
+  zugazti_sub:"Landetxe baten weba, Gamiz-Fikan, Bizkaian",
+  zugazti_desc:"Landing page osoa diseinu editorial zaindu batekin: nortasuna duen tipografia, ingurunean inspiratutako paleta organikoa eta mikro-animazioak. Lasaitasuna transmititzeko eta bisitak erreserba bihurtzeko pentsatua.",
+  zugazti_feats:["Diseinu editorial premiuma serif/sans tipografia kontrastatuekin","Sarrera-animazio mailakatuak eta scroll efektuak","Egitura osoa: heroa, gelak, zerbitzuak, ingurunea eta prezioak","Oinarrizko SEO zaindua eta eleaniztuna","Errendimendurako optimizatua: CSS hutsa, liburutegi astunik gabe"]
+ },
+ en:{
+  ubek_label:"Real project · energy community",
+  ubek_sub:"Website for the Uribe-Butroe energy community",
+  ubek_desc:"Bilingual (Basque/Spanish) institutional website for UBEK, the energy community of the Uribe-Butroe region. It presents the cooperative project, explains shared self-consumption and lets locals become members or donate.",
+  ubek_feats:["Full bilingual EU/ES site with language switching","Six pages: home, philosophy, who we are, projects, membership and donations","Contact and sign-up forms handled with PHP","Includes system (reusable header/footer) in JavaScript","Responsive design and content focused on attracting members"],
+  eskuetan_label:"Personal project",
+  eskuetan_sub:"Second-hand clothing online store · Bilbo",
+  eskuetan_desc:"A complete e-commerce for a vintage clothing shop in Bilbao. A 25-product catalogue with detail pages, cart, wishlist and checkout, in vanilla JavaScript and available in three languages.",
+  eskuetan_feats:["Full trilingual interface: Spanish, Basque and English (i18n)","Cart with quantities, persistent wishlist and checkout","Filters by category, size, price and real-time search","Product pages, featured items and favourites system","Responsive design with its own visual identity"],
+  filmpick_label:"Personal project",
+  filmpick_sub:"Movie recommender based on real criteria",
+  filmpick_desc:"An app that ends infinite scrolling: choose what to watch based on who you're with, mood, genre, length and platform, ranked by compatibility. It combines a curated catalogue with The Movie Database API.",
+  filmpick_feats:["Dual data source: curated catalogue (80 films) + TMDb API","Compatibility ranking based on how many filters each film matches","Favourites, watched list and a 'roulette' mode","Share a film via link and local multi-user support","No frameworks or dependencies: pure vanilla JS, responsive"],
+  zugazti_label:"Personal project",
+  zugazti_sub:"Country house website in Gamiz-Fika, Bizkaia",
+  zugazti_desc:"A complete landing page with a careful editorial design approach: characterful typography, an organic palette inspired by the surroundings and micro-animations. Built to convey calm and turn visits into bookings.",
+  zugazti_feats:["Premium editorial design with contrasting serif/sans type","Staggered entrance animations and scroll effects","Full structure: hero, rooms, services, surroundings and prices","Solid basic SEO and multilingual","Performance-optimized: pure CSS, no heavy libraries"]
+ }
+};
+const UI={
+ eu:{nav_about:"Niri buruz",nav_stack:"Stack-a",nav_work:"Proiektuak",nav_process:"Nola lan egiten dudan",nav_contact:"Kontaktua",
+  hero_eyebrow:"Web Aplikazioen Garatzailea · DAW",hero_title:"Web aplikazioak<br>egiten ditut, <em>hasieratik amaierara</em>.",
+  hero_lead:"<strong>PHP, MySQL eta JavaScript</strong>-en oinarritutako full-stack garatzailea. Datu-basea diseinatu, APIa altxatu, logika programatu eta interfazea azken pixeleraino zaintzen dut.",
+  hero_cta1:"Ikusi proiektuak",hero_cta2:"Kontaktua",
+  meta_k1:"Espezialitatea",meta_v1:"Full-stack web",meta_k2:"Stack nagusia",meta_k3:"Proiektuak",meta_v3:"nabarmenduak",meta_k4:"Kokapena",meta_v4:"· urrutitik",
+  about_h:"<em>Datu-basearen eskematik</em><br>UIaren azken xehetasuneraino.",about_p:"Web Aplikazioen Garapeneko azken ikasturtean, full-stack proiektuak eraikitzen esperientzia errealarekin. Gaztelaniaz, euskaraz eta ingelesez lan egiten dut. Praktiketarako prest.",
+  about_lead:"<em>Full-stack</em> hasieratik amaierara: datuak pentsatu, API garbi baten bidez agertu eta erabiltzeko gogoa ematen duen interfaze bihurtu.",
+  about_body:"<p><strong>PHP, MySQL eta JavaScript</strong>-ekin aplikazio eta interfaze osoak eraiki ditut: autentifikazioa, REST APIak, datu-base erlazionalak eta frontend responsiveak.</p><p><strong>JavaScript vanilla</strong>-rekin lan egiten dut —framework gabe— DOMa, egoera eta errendimendua menderatzeko. Irisgarritasuna eta kode garbia axola zaizkit.</p>",
+  facts_h:"// Begiratu batean",facts_l1:"Prestakuntza",facts_v1:"DAW · Web Aplikazioak",facts_l2:"Profila",facts_v2:"Full-stack juniorra",facts_l3:"Backend",facts_l4:"Frontend",facts_l5:"Hizkuntzak",facts_l6:"Modalitatea",facts_v6:"Aurrez aurre · Hibridoa · Urrutitik",facts_l7:"Eskuragarritasuna",facts_v7:"Praktikak egiteko prest · junior",
+  stack_h:"<em>Eraikitzeko</em> erabiltzen ditudan tresnak.",stack_p:"Egunero erabiltzen dudana, proiektuan non kokatzen den arabera.",stack_c1:"Backend",stack_c2:"Datu-basea",stack_c3:"Frontend",stack_c4:"Tresnak",
+  work_h:"Nire <em>proiektu</em> batzuk.",work_p:"Lau proiektu erreal. Bakoitzak arazo zehatz bat konpontzen du. Sakatu edozein irudi handiago ikusteko.",
+  proc_h:"Proiektu bat, <em>lau fase</em>.",proc_p:"Edozein garapen lantzeko dudan modua, lehen zirriborrotik hedapenera.",
+  proc_1h:"Ulertu",proc_1p:"Arazoa eta helburuak zehazten ditut.",proc_2h:"Modelatu",proc_2p:"Datu-basea eta APIaren arkitektura diseinatzen ditut.",proc_3h:"Eraiki",proc_3p:"Backend eta frontend programatzen ditut iterazioka.",proc_4h:"Findu",proc_4p:"Probatu, optimizatu eta xehetasun bisuala berrikusten dut.",
+  contact_label:"Kontaktua",contact_h:"Hemen <em>aurki</em> nazakezu.",contact_lead:"Web garatzaile gisa nire lehen urratsak ematen ari naiz, eta hazteko proiektu bat bilatzen dut. Kabitu naitekeela uste baduzu, esadazu: mezu batera nago.",
+  footer:"Web Garatzailea · PHP · MySQL · JavaScript · Bizkaia 2026"},
+ en:{nav_about:"About",nav_stack:"Stack",nav_work:"Projects",nav_process:"How I work",nav_contact:"Contact",
+  hero_eyebrow:"Web Application Developer · DAW",hero_title:"I build web apps<br><em>from start to finish</em>.",
+  hero_lead:"Full-stack developer focused on <strong>PHP, MySQL and JavaScript</strong>. I design the database, build the API, write the logic and polish the interface down to the last pixel.",
+  hero_cta1:"View projects",hero_cta2:"Contact",
+  meta_k1:"Focus",meta_v1:"Full-stack web",meta_k2:"Core stack",meta_k3:"Projects",meta_v3:"featured",meta_k4:"Location",meta_v4:"· remote",
+  about_h:"From the <em>database schema</em><br>to the last UI detail.",about_p:"In my final year of Web Application Development, with hands-on experience building full-stack projects. I work in Spanish, Basque and English. Available for an internship.",
+  about_lead:"<em>Full-stack</em> from start to finish: thinking through the data, exposing it through a clean API and turning it into an interface people actually want to use.",
+  about_body:"<p>I've built complete apps and interfaces with <strong>PHP, MySQL and JavaScript</strong>: authentication, REST APIs, relational databases and responsive frontends.</p><p>I work with <strong>vanilla JavaScript</strong> —no frameworks— to master the DOM, state and performance. I care about accessibility and clean code.</p>",
+  facts_h:"// At a glance",facts_l1:"Education",facts_v1:"DAW · Web App Development",facts_l2:"Profile",facts_v2:"Junior full-stack",facts_l3:"Backend",facts_l4:"Frontend",facts_l5:"Languages",facts_l6:"Mode",facts_v6:"On-site · Hybrid · Remote",facts_l7:"Availability",facts_v7:"Open to an internship · junior",
+  stack_h:"The tools I <em>build with</em>.",stack_p:"What I use daily, organized by where it fits in the project.",stack_c1:"Backend",stack_c2:"Database",stack_c3:"Frontend",stack_c4:"Tools",
+  work_h:"Some of my <em>projects</em>.",work_p:"Four real projects. Each one solves a concrete problem. Click any image to view it larger.",
+  proc_h:"One project, <em>four phases</em>.",proc_p:"How I approach any build, from the first sketch to deployment.",
+  proc_1h:"Understand",proc_1p:"I define the problem and goals.",proc_2h:"Model",proc_2p:"I design the database and API architecture.",proc_3h:"Build",proc_3p:"I program backend and frontend in iterations.",proc_4h:"Polish",proc_4p:"I test, optimize and review the visual detail.",
+  contact_label:"Contact",contact_h:"Where to <em>find me</em>.",contact_lead:"I'm taking my first steps as a web developer and looking for a project to grow with. If you think I could be a fit, let me know: I'm one message away.",
+  footer:"Web Developer · PHP · MySQL · JavaScript · Bizkaia 2026"}
+};
+// merge project data into UI per lang
+['eu','en'].forEach(l=>{Object.assign(UI[l],PROJ_DATA[l]);});
+// build ES defaults from DOM + project ES data
+const ES={};
+function captureES(){
+  document.querySelectorAll('[data-i18n]').forEach(el=>ES[el.dataset.i18n]=el.innerHTML);
+  document.querySelectorAll('[data-i18n-html]').forEach(el=>ES[el.dataset.i18nHtml]=el.innerHTML);
+  Object.assign(ES,PROJ_DATA.es);
+}
+function renderFeats(lang){
+  document.querySelectorAll('[data-i18n-list]').forEach(ul=>{
+    const key=ul.dataset.i18nList;
+    const arr=(lang==='es'?PROJ_DATA.es:UI[lang])[key]||PROJ_DATA.es[key]||[];
+    ul.innerHTML=arr.map(x=>'<li>'+x+'</li>').join('');
+  });
+}
+function applyProjTexts(lang){
+  ['ubek','eskuetan','filmpick','zugazti'].forEach(p=>{
+    const src=(lang==='es'?PROJ_DATA.es:UI[lang]);
+    const subEl=document.querySelector('[data-i18n="'+p+'_sub"]');
+    const descEl=document.querySelector('[data-i18n="'+p+'_desc"]');
+    const labEl=document.querySelector('[data-i18n="'+p+'_label"]');
+    if(subEl)subEl.textContent=src[p+'_sub'];
+    if(descEl)descEl.textContent=src[p+'_desc'];
+    if(labEl)labEl.textContent=src[p+'_label'];
+  });
+}
+function setLang(lang){
+  document.documentElement.lang=lang;
+  curLang=lang;
+  refreshGalleries();
+  const dict=lang==='es'?ES:UI[lang];
+  document.querySelectorAll('[data-i18n]').forEach(el=>{const v=dict[el.dataset.i18n];if(v!=null)el.innerHTML=v;});
+  document.querySelectorAll('[data-i18n-html]').forEach(el=>{const v=dict[el.dataset.i18nHtml];if(v!=null)el.innerHTML=v;});
+  applyProjTexts(lang);
+  renderFeats(lang);
+  buildLinks(lang);
+  document.querySelectorAll('#lang button').forEach(b=>b.classList.toggle('on',b.dataset.lang===lang));
+}
+// "ver demo" links per project
+const DEMOS={ubek:"https://ubek.eus/"};
+const LINKTXT={es:"Ver web",eu:"Ikusi weba",en:"View site"};
+function buildLinks(lang){
+  const label=LINKTXT[lang]||LINKTXT.es;
+  Object.keys(DEMOS).forEach(p=>{
+    const c=document.getElementById('links-'+p);
+    if(c){c.innerHTML='<a href="'+DEMOS[p]+'" target="_blank" rel="noopener" class="p-link">'+
+      label+' <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></a>';}
+  });
+}
+// init
+curLang='es';
+captureES();
+buildLinks('es');
+applyProjTexts('es');
+renderFeats('es');
+refreshGalleries();
+document.querySelectorAll('#lang button').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
+// nav + reveal + menu
+const nav=document.getElementById('nav');
+addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>30));
+const mt=document.getElementById('menuToggle'),nl=document.getElementById('navlinks');
+mt.addEventListener('click',()=>nl.classList.toggle('open'));
+nl.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nl.classList.remove('open')));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.08});
+document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(i%3*0.06)+'s';io.observe(el);});
+</script>
+</body>
+</html>

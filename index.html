@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Zaloa Madariaga · Desarrolladora de Aplicaciones Web</title>
-<meta name="description" content="Portfolio de Zaloa Madariaga, desarrolladora web full-stack (PHP, MySQL, JavaScript). Proyectos: UBEK, Eskuetan, FilmPick y Zugazti.">
+<meta name="description" content="Portfolio de Zaloa Madariaga, desarrolladora web full-stack (PHP, MySQL, JavaScript). Proyectos: UBEK, Eskuetan, FilmPick, Zugazti y Sukalde.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Space+Mono:wght@400;700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -111,6 +111,13 @@ section.block{padding:100px 5vw;position:relative}
 .thumb img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
 .thumb:hover{opacity:1}
 .thumb.on{opacity:1;border-color:var(--accent);box-shadow:0 0 0 2px rgba(181,70,42,.2)}
+/* Sukalde placeholder cards (sin screenshots) */
+.sukalde-card{border-radius:8px;border:1px solid var(--line);box-shadow:var(--shadow-lg);aspect-ratio:1440/900;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:30px;text-align:center;background:linear-gradient(150deg,var(--sk-bg),var(--sk-bg2));color:var(--sk-ink)}
+.sukalde-card .sk-chip{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.18em;padding:5px 13px;border:1px solid var(--sk-acc);border-radius:40px;color:var(--sk-acc)}
+.sukalde-card .sk-logo{font-family:'Fraunces',serif;font-size:clamp(38px,6vw,64px);font-weight:400;letter-spacing:-.02em;line-height:1}
+.sukalde-card .sk-tag{font-family:'Fraunces',serif;font-style:italic;font-size:16px;opacity:.85;max-width:80%}
+.sukalde-card .sk-langs{display:flex;gap:8px;margin-top:4px}
+.sukalde-card .sk-langs span{font-family:'Space Mono',monospace;font-size:11px;font-weight:700;letter-spacing:.06em;padding:5px 11px;border-radius:30px;background:var(--sk-acc);color:var(--sk-bg)}
 /* lightbox */
 #lightbox{position:fixed;inset:0;z-index:9000;background:rgba(15,13,10,.93);display:none;align-items:center;justify-content:center;padding:40px;flex-direction:column}
 #lightbox.open{display:flex}
@@ -174,12 +181,12 @@ footer .f-meta{font-family:'Space Mono',monospace;font-size:11px;color:var(--mut
     <div class="hero-cta reveal">
       <a href="#work" class="btn-primary"><span data-i18n="hero_cta1">Ver proyectos</span>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      <a href="#contact" class="btn-ghost" data-i18n="hero_cta2">Contacto</a>
+      <a href="#contact" class="btn-ghost" data-i18n="hero_cta2">Hablemos</a>
     </div>
     <div class="hero-meta">
       <div class="item reveal"><div class="k" data-i18n="meta_k1">Especialidad</div><div class="v" data-i18n="meta_v1">Full-stack web</div></div>
       <div class="item reveal"><div class="k" data-i18n="meta_k2">Stack principal</div><div class="v">PHP · MySQL · JS</div></div>
-      <div class="item reveal"><div class="k" data-i18n="meta_k3">Proyectos</div><div class="v">4 <small data-i18n="meta_v3">destacados</small></div></div>
+      <div class="item reveal"><div class="k" data-i18n="meta_k3">Proyectos</div><div class="v">5 <small data-i18n="meta_v3">destacados</small></div></div>
       <div class="item reveal"><div class="k" data-i18n="meta_k4">Ubicación</div><div class="v">Bizkaia <small data-i18n="meta_v4">· remoto</small></div></div>
     </div>
   </div>
@@ -243,7 +250,7 @@ footer .f-meta{font-family:'Space Mono',monospace;font-size:11px;color:var(--mut
         <div class="label"><span class="num">03</span> / <span data-i18n="nav_work">Proyectos</span></div>
         <h2 data-i18n-html="work_h">Algunos de mis <em>proyectos</em>.</h2>
       </div>
-      <p data-i18n="work_p">Cuatro proyectos reales. Cada uno resuelve un problema concreto y está hecho para usarse. Pulsa cualquier imagen para verla en grande.</p>
+      <p data-i18n="work_p">Cinco proyectos reales. Cada uno resuelve un problema concreto y está hecho para usarse. Pulsa cualquier imagen para verla en grande.</p>
     </div>
 
     <article class="project reveal" id="proj-ubek">
@@ -297,8 +304,8 @@ footer .f-meta{font-family:'Space Mono',monospace;font-size:11px;color:var(--mut
           <div class="p-links" id="links-filmpick"></div>
         </div>
         <div class="p-visual"><div class="gallery" data-proj="filmpick">
-        <div class="g-main"><img id="main-filmpick" src="images/filmpick_01_discover_es.jpg" alt="" onclick="openLight('filmpick',currentIdx['filmpick'])"></div>
-        <div class="g-thumbs"><button class="thumb on" onclick="setMain('filmpick',0)"><img src="images/filmpick_01_discover_es.jpg" alt="" loading="lazy"></button><button class="thumb" onclick="setMain('filmpick',1)"><img src="images/filmpick_05_resultados_es.jpg" alt="" loading="lazy"></button><button class="thumb" onclick="setMain('filmpick',2)"><img src="images/filmpick_02_ruleta_es.jpg" alt="" loading="lazy"></button><button class="thumb" onclick="setMain('filmpick',3)"><img src="images/filmpick_03_favoritos_es.jpg" alt="" loading="lazy"></button><button class="thumb" onclick="setMain('filmpick',4)"><img src="images/filmpick_04_vistas_es.jpg" alt="" loading="lazy"></button></div>
+        <div class="g-main"><img id="main-filmpick" src="images/filmpick_00_inicio_es.jpg" alt="" onclick="openLight('filmpick',currentIdx['filmpick'])"></div>
+        <div class="g-thumbs"><button class="thumb on" onclick="setMain('filmpick',0)"><img src="images/filmpick_00_inicio_es.jpg" alt="" loading="lazy"></button><button class="thumb" onclick="setMain('filmpick',1)"><img src="images/filmpick_01_discover_es.jpg" alt="" loading="lazy"></button><button class="thumb" onclick="setMain('filmpick',2)"><img src="images/filmpick_02_ruleta_es.jpg" alt="" loading="lazy"></button><button class="thumb" onclick="setMain('filmpick',3)"><img src="images/filmpick_03_favoritos_es.jpg" alt="" loading="lazy"></button><button class="thumb" onclick="setMain('filmpick',4)"><img src="images/filmpick_04_vistas_es.jpg" alt="" loading="lazy"></button><button class="thumb" onclick="setMain('filmpick',5)"><img src="images/filmpick_05_resultados_es.jpg" alt="" loading="lazy"></button></div>
       </div></div>
       </div>
     </article>
@@ -321,6 +328,28 @@ footer .f-meta{font-family:'Space Mono',monospace;font-size:11px;color:var(--mut
       </div></div>
       </div>
     </article>
+
+    
+
+    <article class="project reveal" id="proj-sukalde_madera">
+      <div class="p-grid">
+        <div class="p-text">
+          <div class="p-index">P-05 — <span data-i18n="sukalde_madera_label">Proyecto</span></div>
+          <span class="p-tag" style="background:rgba(196,118,58,.16);color:#a85f25">Full-stack · PHP/MySQL · EU/ES/EN</span>
+          <h3>Sukalde</h3>
+          <div class="p-sub" data-i18n="sukalde_madera_sub">—</div>
+          <p class="p-desc" data-i18n="sukalde_madera_desc">—</p>
+          <ul class="p-feats" data-i18n-list="sukalde_madera_feats"></ul>
+          <div class="p-stack"><span class="t">PHP</span><span class="t">MySQL</span><span class="t">REST API</span><span class="t">JavaScript</span><span class="t">i18n</span><span class="t">Responsive</span></div>
+        </div>
+        <div class="p-visual"><div class="gallery" data-proj="sukalde_madera">
+        <div class="g-main"><img id="main-sukalde_madera" src="images/sukalde_madera_01_home_es.jpg" alt="" onclick="openLight('sukalde_madera',currentIdx['sukalde_madera'])"></div>
+        <div class="g-thumbs"><button class="thumb on" onclick="setMain('sukalde_madera',0)"><img src="images/sukalde_madera_01_home_es.jpg" alt="" loading="lazy"></button><button class="thumb" onclick="setMain('sukalde_madera',1)"><img src="images/sukalde_madera_02_tengo_es.jpg" alt="" loading="lazy"></button><button class="thumb" onclick="setMain('sukalde_madera',2)"><img src="images/sukalde_madera_03_antojo_es.jpg" alt="" loading="lazy"></button><button class="thumb" onclick="setMain('sukalde_madera',3)"><img src="images/sukalde_madera_04_receta_es.jpg" alt="" loading="lazy"></button></div>
+      </div></div>
+      </div>
+    </article>
+
+    
   </div>
 </section>
 
@@ -387,12 +416,18 @@ footer .f-meta{font-family:'Space Mono',monospace;font-size:11px;color:var(--mut
 const GALBASE={
  "ubek":["ubek_01_inicio","ubek_03_nor","ubek_02_filosofia","ubek_04_proiektuak","ubek_05_bazkidetu","ubek_06_dohaintza"],
  "eskuetan":["eskuetan_01_home","eskuetan_02_catalogo","eskuetan_07_detalle","eskuetan_03_carrito","eskuetan_04_favoritos","eskuetan_05_vender","eskuetan_06_sobre"],
- "filmpick":["filmpick_01_discover","filmpick_02_ruleta","filmpick_03_favoritos","filmpick_04_vistas"],
- "zugazti":["zugazti_01_hero","zugazti_02_casa","zugazti_03_habitaciones","zugazti_04_servicios","zugazti_05_entorno","zugazti_06_precios","zugazti_07_contacto"]
+ "filmpick":["filmpick_00_inicio","filmpick_01_discover","filmpick_02_ruleta","filmpick_03_favoritos","filmpick_04_vistas","filmpick_05_resultados"],
+ "zugazti":["zugazti_01_hero","zugazti_02_casa","zugazti_03_habitaciones","zugazti_04_servicios","zugazti_05_entorno","zugazti_06_precios","zugazti_07_contacto"],
+ "sukalde_azkena":["sukalde_azkena_01_home","sukalde_azkena_02_tengo","sukalde_azkena_03_antojo","sukalde_azkena_04_receta"],
+ "sukalde_madera":["sukalde_madera_01_home","sukalde_madera_02_tengo","sukalde_madera_03_antojo","sukalde_madera_04_receta"],
+ "sukalde_papel":["sukalde_papel_01_home","sukalde_papel_02_tengo","sukalde_papel_03_antojo","sukalde_papel_04_receta"]
 };
 let curLang='es';
+// Placeholder mientras no existan las capturas de Sukalde (SVG data-URI).
+const IMG_PH="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1440' height='900'%3E%3Crect width='100%25' height='100%25' fill='%23e8e2d4'/%3E%3Ctext x='50%25' y='50%25' font-family='monospace' font-size='38' fill='%238a8270' text-anchor='middle' dominant-baseline='middle'%3Ecaptura pendiente%3C/text%3E%3C/svg%3E";
+function imgFallback(img){img.onerror=null;img.src=IMG_PH;}
 function imgPath(base){return 'images/'+base+'_'+curLang+'.jpg';}
-const currentIdx={ubek:0,eskuetan:0,filmpick:0,zugazti:0};
+const currentIdx={ubek:0,eskuetan:0,filmpick:0,zugazti:0,sukalde_azkena:0,sukalde_madera:0,sukalde_papel:0};
 function refreshGalleries(){
   // actualiza imagen principal y miniaturas de cada proyecto al idioma actual
   Object.keys(GALBASE).forEach(proj=>{
@@ -412,7 +447,7 @@ function setMain(proj,i){
 let lbProj=null;
 function openLight(proj,i){lbProj=proj;currentIdx[proj]=i;showLb();document.getElementById('lightbox').classList.add('open');document.body.style.overflow='hidden';}
 function closeLight(){document.getElementById('lightbox').classList.remove('open');document.body.style.overflow='';}
-function showLb(){const i=currentIdx[lbProj];document.getElementById('lb-img').src=imgPath(GALBASE[lbProj][i]);document.getElementById('lb-cap').textContent=(i+1)+' / '+GALBASE[lbProj].length+'  ·  '+lbProj.toUpperCase();}
+function showLb(){const i=currentIdx[lbProj];const im=document.getElementById('lb-img');im.onerror=function(){imgFallback(this)};im.src=imgPath(GALBASE[lbProj][i]);document.getElementById('lb-cap').textContent=(i+1)+' / '+GALBASE[lbProj].length+'  ·  '+lbProj.toUpperCase();}
 function lightStep(d){const n=GALBASE[lbProj].length;currentIdx[lbProj]=(currentIdx[lbProj]+d+n)%n;showLb();setMain(lbProj,currentIdx[lbProj]);}
 document.getElementById('lightbox').addEventListener('click',e=>{if(e.target.id==='lightbox')closeLight();});
 document.addEventListener('keydown',e=>{if(!document.getElementById('lightbox').classList.contains('open'))return;if(e.key==='Escape')closeLight();if(e.key==='ArrowRight')lightStep(1);if(e.key==='ArrowLeft')lightStep(-1);});
@@ -430,12 +465,24 @@ const PROJ_DATA={
   eskuetan_feats:["Interfaz trilingüe completa: castellano, euskera e inglés (i18n)","Carrito con cantidades, lista de deseos persistente y checkout","Filtros por categoría, talla, precio y buscador en tiempo real","Fichas de producto, destacados y sistema de favoritos","Diseño responsive con identidad visual propia"],
   filmpick_label:"Proyecto personal",
   filmpick_sub:"Recomendador de películas con criterios reales",
-  filmpick_desc:"Aplicación que acaba con el scroll infinito: elige qué película ver según con quién la ves, estado de ánimo, género, duración y plataforma, y ordena por compatibilidad. Combina un catálogo curado propio con la API de The Movie Database.",
-  filmpick_feats:["Doble fuente de datos: catálogo curado (80 películas) + API de TMDb","Ranking por compatibilidad según cuántos filtros cumple cada película","Favoritos, lista de vistas y modo «ruleta»","Compartir película por enlace y multiusuario local","Sin frameworks ni dependencias: JS vanilla puro y responsive"],
+  filmpick_desc:"Aplicación que acaba con el scroll infinito: elige qué película ver según con quién la ves, estado de ánimo, género, duración y plataforma, y ordena por compatibilidad. Combina un catálogo propio con la API de The Movie Database.",
+  filmpick_feats:["Doble fuente de datos: catálogo propio (80 películas) + API de TMDb","Ranking por compatibilidad según cuántos filtros cumple cada película","Favoritos, lista de vistas y modo «ruleta»","Compartir película por enlace y multiusuario local","Sin frameworks ni dependencias: JS vanilla puro y responsive"],
   zugazti_label:"Proyecto personal",
   zugazti_sub:"Web de casa rural en Gamiz-Fika, Bizkaia",
   zugazti_desc:"Landing page completa con enfoque de diseño editorial cuidado: tipografía con carácter, paleta orgánica inspirada en el entorno y micro-animaciones. Pensada para transmitir calma y convertir visitas en reservas.",
-  zugazti_feats:["Diseño editorial premium con tipografías serif/sans contrastadas","Animaciones de entrada escalonadas y efectos al hacer scroll","Estructura completa: hero, habitaciones, servicios, entorno y precios","SEO básico cuidado y multilingüe","Optimizada para rendimiento: CSS puro, sin librerías pesadas"]
+  zugazti_feats:["Diseño editorial premium con tipografías serif/sans contrastadas","Animaciones de entrada escalonadas y efectos al hacer scroll","Estructura completa: hero, habitaciones, servicios, entorno y precios","SEO básico cuidado y multilingüe","Optimizada para rendimiento: CSS puro, sin librerías pesadas"],
+  sukalde_azkena_label:"Proyecto personal · full-stack",
+  sukalde_azkena_sub:"Recetario inteligente full-stack",
+  sukalde_azkena_desc:"Aplicación de cocina full-stack (PHP + MySQL + JS) que propone recetas con lo que tienes en casa o según tu antojo. Interfaz trilingüe y recetas traducidas al vuelo a euskera e inglés mediante un endpoint PHP.",
+  sukalde_azkena_feats:["Backend PHP + MySQL con API propia y CRUD de recetas","Dos modos: «con lo que tengo» y «según mi antojo» con filtros","Generador de menú completo (entrante, principal y postre)","Interfaz EU/ES/EN y traducción de recetas al vuelo con caché","Favoritos y lista de la compra persistentes (localStorage)"],
+  sukalde_madera_label:"Proyecto personal · full-stack",
+  sukalde_madera_sub:"Recetario inteligente full-stack",
+  sukalde_madera_desc:"Aplicación de cocina full-stack (PHP + MySQL + JS) que propone recetas con lo que tienes en casa o según tu antojo. Interfaz trilingüe y recetas traducidas al vuelo a euskera e inglés mediante un endpoint PHP.",
+  sukalde_madera_feats:["Backend PHP + MySQL con API propia y CRUD de recetas","Dos modos: «con lo que tengo» y «según mi antojo» con filtros","Generador de menú completo (entrante, principal y postre)","Interfaz EU/ES/EN y traducción de recetas al vuelo con caché","Favoritos y lista de la compra persistentes (localStorage)"],
+  sukalde_papel_label:"Proyecto personal · full-stack",
+  sukalde_papel_sub:"Recetario inteligente full-stack",
+  sukalde_papel_desc:"Aplicación de cocina full-stack (PHP + MySQL + JS) que propone recetas con lo que tienes en casa o según tu antojo. Interfaz trilingüe y recetas traducidas al vuelo a euskera e inglés mediante un endpoint PHP.",
+  sukalde_papel_feats:["Backend PHP + MySQL con API propia y CRUD de recetas","Dos modos: «con lo que tengo» y «según mi antojo» con filtros","Generador de menú completo (entrante, principal y postre)","Interfaz EU/ES/EN y traducción de recetas al vuelo con caché","Favoritos y lista de la compra persistentes (localStorage)"]
  },
  eu:{
   ubek_label:"Benetako proiektua · energia-komunitatea",
@@ -453,7 +500,19 @@ const PROJ_DATA={
   zugazti_label:"Proiektu pertsonala",
   zugazti_sub:"Landetxe baten weba, Gamiz-Fikan, Bizkaian",
   zugazti_desc:"Landing page osoa diseinu editorial zaindu batekin: nortasuna duen tipografia, ingurunean inspiratutako paleta organikoa eta mikro-animazioak. Lasaitasuna transmititzeko eta bisitak erreserba bihurtzeko pentsatua.",
-  zugazti_feats:["Diseinu editorial premiuma serif/sans tipografia kontrastatuekin","Sarrera-animazio mailakatuak eta scroll efektuak","Egitura osoa: heroa, gelak, zerbitzuak, ingurunea eta prezioak","Oinarrizko SEO zaindua eta eleaniztuna","Errendimendurako optimizatua: CSS hutsa, liburutegi astunik gabe"]
+  zugazti_feats:["Diseinu editorial premiuma serif/sans tipografia kontrastatuekin","Sarrera-animazio mailakatuak eta scroll efektuak","Egitura osoa: heroa, gelak, zerbitzuak, ingurunea eta prezioak","Oinarrizko SEO zaindua eta eleaniztuna","Errendimendurako optimizatua: CSS hutsa, liburutegi astunik gabe"],
+  sukalde_azkena_label:"Proiektu pertsonala · full-stack",
+  sukalde_azkena_sub:"Errezeta-sortzaile adimentsu full-stack",
+  sukalde_azkena_desc:"Sukaldaritzako full-stack aplikazioa (PHP + MySQL + JS) etxean duzunarekin edo zure gogoaren arabera errezetak proposatzen dituena. Interfaze eleaniztuna eta errezetak euskarara eta ingelesera itzulita unean bertan, PHP endpoint baten bidez.",
+  sukalde_azkena_feats:["PHP + MySQL backend-a API propioarekin eta errezeten CRUDarekin","Bi modu: «daukadanarekin» eta «nire gogoaren arabera» iragazkiekin","Menu osoaren sortzailea (sarrera, nagusia eta postrea)","EU/ES/EN interfazea eta errezeten itzulpena unean, cachearekin","Gogokoak eta erosketa-zerrenda iraunkorrak (localStorage)"],
+  sukalde_madera_label:"Proiektu pertsonala · full-stack",
+  sukalde_madera_sub:"Errezeta-sortzaile adimentsu full-stack",
+  sukalde_madera_desc:"Sukaldaritzako full-stack aplikazioa (PHP + MySQL + JS) etxean duzunarekin edo zure gogoaren arabera errezetak proposatzen dituena. Interfaze eleaniztuna eta errezetak euskarara eta ingelesera itzulita unean bertan, PHP endpoint baten bidez.",
+  sukalde_madera_feats:["PHP + MySQL backend-a API propioarekin eta errezeten CRUDarekin","Bi modu: «daukadanarekin» eta «nire gogoaren arabera» iragazkiekin","Menu osoaren sortzailea (sarrera, nagusia eta postrea)","EU/ES/EN interfazea eta errezeten itzulpena unean, cachearekin","Gogokoak eta erosketa-zerrenda iraunkorrak (localStorage)"],
+  sukalde_papel_label:"Proiektu pertsonala · full-stack",
+  sukalde_papel_sub:"Errezeta-sortzaile adimentsu full-stack",
+  sukalde_papel_desc:"Sukaldaritzako full-stack aplikazioa (PHP + MySQL + JS) etxean duzunarekin edo zure gogoaren arabera errezetak proposatzen dituena. Interfaze eleaniztuna eta errezetak euskarara eta ingelesera itzulita unean bertan, PHP endpoint baten bidez.",
+  sukalde_papel_feats:["PHP + MySQL backend-a API propioarekin eta errezeten CRUDarekin","Bi modu: «daukadanarekin» eta «nire gogoaren arabera» iragazkiekin","Menu osoaren sortzailea (sarrera, nagusia eta postrea)","EU/ES/EN interfazea eta errezeten itzulpena unean, cachearekin","Gogokoak eta erosketa-zerrenda iraunkorrak (localStorage)"]
  },
  en:{
   ubek_label:"Real project · energy community",
@@ -466,26 +525,38 @@ const PROJ_DATA={
   eskuetan_feats:["Full trilingual interface: Spanish, Basque and English (i18n)","Cart with quantities, persistent wishlist and checkout","Filters by category, size, price and real-time search","Product pages, featured items and favourites system","Responsive design with its own visual identity"],
   filmpick_label:"Personal project",
   filmpick_sub:"Movie recommender based on real criteria",
-  filmpick_desc:"An app that ends infinite scrolling: choose what to watch based on who you're with, mood, genre, length and platform, ranked by compatibility. It combines a curated catalogue with The Movie Database API.",
-  filmpick_feats:["Dual data source: curated catalogue (80 films) + TMDb API","Compatibility ranking based on how many filters each film matches","Favourites, watched list and a 'roulette' mode","Share a film via link and local multi-user support","No frameworks or dependencies: pure vanilla JS, responsive"],
+  filmpick_desc:"An app that ends infinite scrolling: choose what to watch based on who you're with, mood, genre, length and platform, ranked by compatibility. It combines a own catalogue with The Movie Database API.",
+  filmpick_feats:["Dual data source: own catalogue (80 films) + TMDb API","Compatibility ranking based on how many filters each film matches","Favourites, watched list and a 'roulette' mode","Share a film via link and local multi-user support","No frameworks or dependencies: pure vanilla JS, responsive"],
   zugazti_label:"Personal project",
   zugazti_sub:"Country house website in Gamiz-Fika, Bizkaia",
   zugazti_desc:"A complete landing page with a careful editorial design approach: characterful typography, an organic palette inspired by the surroundings and micro-animations. Built to convey calm and turn visits into bookings.",
-  zugazti_feats:["Premium editorial design with contrasting serif/sans type","Staggered entrance animations and scroll effects","Full structure: hero, rooms, services, surroundings and prices","Solid basic SEO and multilingual","Performance-optimized: pure CSS, no heavy libraries"]
+  zugazti_feats:["Premium editorial design with contrasting serif/sans type","Staggered entrance animations and scroll effects","Full structure: hero, rooms, services, surroundings and prices","Solid basic SEO and multilingual","Performance-optimized: pure CSS, no heavy libraries"],
+  sukalde_azkena_label:"Personal project · full-stack",
+  sukalde_azkena_sub:"Full-stack smart recipe app",
+  sukalde_azkena_desc:"A full-stack cooking app (PHP + MySQL + JS) that suggests recipes from what you have at home or what you fancy. Trilingual interface with recipes translated on the fly to Basque and English through a PHP endpoint.",
+  sukalde_azkena_feats:["PHP + MySQL backend with its own API and recipe CRUD","Two modes: 'with what I have' and 'what I fancy' with filters","Full-menu generator (starter, main and dessert)","EU/ES/EN interface and on-the-fly recipe translation with cache","Persistent favourites and shopping list (localStorage)"],
+  sukalde_madera_label:"Personal project · full-stack",
+  sukalde_madera_sub:"Full-stack smart recipe app",
+  sukalde_madera_desc:"A full-stack cooking app (PHP + MySQL + JS) that suggests recipes from what you have at home or what you fancy. Trilingual interface with recipes translated on the fly to Basque and English through a PHP endpoint.",
+  sukalde_madera_feats:["PHP + MySQL backend with its own API and recipe CRUD","Two modes: 'with what I have' and 'what I fancy' with filters","Full-menu generator (starter, main and dessert)","EU/ES/EN interface and on-the-fly recipe translation with cache","Persistent favourites and shopping list (localStorage)"],
+  sukalde_papel_label:"Personal project · full-stack",
+  sukalde_papel_sub:"Full-stack smart recipe app",
+  sukalde_papel_desc:"A full-stack cooking app (PHP + MySQL + JS) that suggests recipes from what you have at home or what you fancy. Trilingual interface with recipes translated on the fly to Basque and English through a PHP endpoint.",
+  sukalde_papel_feats:["PHP + MySQL backend with its own API and recipe CRUD","Two modes: 'with what I have' and 'what I fancy' with filters","Full-menu generator (starter, main and dessert)","EU/ES/EN interface and on-the-fly recipe translation with cache","Persistent favourites and shopping list (localStorage)"]
  }
 };
 const UI={
  eu:{nav_about:"Niri buruz",nav_stack:"Stack-a",nav_work:"Proiektuak",nav_process:"Nola lan egiten dudan",nav_contact:"Kontaktua",
   hero_eyebrow:"Web Aplikazioen Garatzailea · DAW",hero_title:"Web aplikazioak<br>egiten ditut, <em>hasieratik amaierara</em>.",
   hero_lead:"<strong>PHP, MySQL eta JavaScript</strong>-en oinarritutako full-stack garatzailea. Datu-basea diseinatu, APIa altxatu, logika programatu eta interfazea azken pixeleraino zaintzen dut.",
-  hero_cta1:"Ikusi proiektuak",hero_cta2:"Kontaktua",
+  hero_cta1:"Ikusi proiektuak",hero_cta2:"Hitz egin dezagun",
   meta_k1:"Espezialitatea",meta_v1:"Full-stack web",meta_k2:"Stack nagusia",meta_k3:"Proiektuak",meta_v3:"nabarmenduak",meta_k4:"Kokapena",meta_v4:"· urrutitik",
   about_h:"<em>Datu-basearen eskematik</em><br>UIaren azken xehetasuneraino.",about_p:"Web Aplikazioen Garapeneko azken ikasturtean, full-stack proiektuak eraikitzen esperientzia errealarekin. Gaztelaniaz, euskaraz eta ingelesez lan egiten dut. Praktiketarako prest.",
   about_lead:"<em>Full-stack</em> hasieratik amaierara: datuak pentsatu, API garbi baten bidez agertu eta erabiltzeko gogoa ematen duen interfaze bihurtu.",
   about_body:"<p><strong>PHP, MySQL eta JavaScript</strong>-ekin aplikazio eta interfaze osoak eraiki ditut: autentifikazioa, REST APIak, datu-base erlazionalak eta frontend responsiveak.</p><p><strong>JavaScript vanilla</strong>-rekin lan egiten dut —framework gabe— DOMa, egoera eta errendimendua menderatzeko. Irisgarritasuna eta kode garbia axola zaizkit.</p>",
   facts_h:"// Begiratu batean",facts_l1:"Prestakuntza",facts_v1:"DAW · Web Aplikazioak",facts_l2:"Profila",facts_v2:"Full-stack juniorra",facts_l3:"Backend",facts_l4:"Frontend",facts_l5:"Hizkuntzak",facts_l6:"Modalitatea",facts_v6:"Aurrez aurre · Hibridoa · Urrutitik",facts_l7:"Eskuragarritasuna",facts_v7:"Praktikak egiteko prest · junior",
   stack_h:"<em>Eraikitzeko</em> erabiltzen ditudan tresnak.",stack_p:"Egunero erabiltzen dudana, proiektuan non kokatzen den arabera.",stack_c1:"Backend",stack_c2:"Datu-basea",stack_c3:"Frontend",stack_c4:"Tresnak",
-  work_h:"Nire <em>proiektu</em> batzuk.",work_p:"Lau proiektu erreal. Bakoitzak arazo zehatz bat konpontzen du. Sakatu edozein irudi handiago ikusteko.",
+  work_h:"Nire <em>proiektu</em> batzuk.",work_p:"Bost proiektu erreal. Bakoitzak arazo zehatz bat konpontzen du. Sakatu edozein irudi handiago ikusteko.",
   proc_h:"Proiektu bat, <em>lau fase</em>.",proc_p:"Edozein garapen lantzeko dudan modua, lehen zirriborrotik hedapenera.",
   proc_1h:"Ulertu",proc_1p:"Arazoa eta helburuak zehazten ditut.",proc_2h:"Modelatu",proc_2p:"Datu-basea eta APIaren arkitektura diseinatzen ditut.",proc_3h:"Eraiki",proc_3p:"Backend eta frontend programatzen ditut iterazioka.",proc_4h:"Findu",proc_4p:"Probatu, optimizatu eta xehetasun bisuala berrikusten dut.",
   contact_label:"Kontaktua",contact_h:"Hemen <em>aurki</em> nazakezu.",contact_lead:"Web garatzaile gisa nire lehen urratsak ematen ari naiz, eta hazteko proiektu bat bilatzen dut. Kabitu naitekeela uste baduzu, esadazu: mezu batera nago.",
@@ -493,14 +564,14 @@ const UI={
  en:{nav_about:"About",nav_stack:"Stack",nav_work:"Projects",nav_process:"How I work",nav_contact:"Contact",
   hero_eyebrow:"Web Application Developer · DAW",hero_title:"I build web apps<br><em>from start to finish</em>.",
   hero_lead:"Full-stack developer focused on <strong>PHP, MySQL and JavaScript</strong>. I design the database, build the API, write the logic and polish the interface down to the last pixel.",
-  hero_cta1:"View projects",hero_cta2:"Contact",
+  hero_cta1:"View projects",hero_cta2:"Let's talk",
   meta_k1:"Focus",meta_v1:"Full-stack web",meta_k2:"Core stack",meta_k3:"Projects",meta_v3:"featured",meta_k4:"Location",meta_v4:"· remote",
   about_h:"From the <em>database schema</em><br>to the last UI detail.",about_p:"In my final year of Web Application Development, with hands-on experience building full-stack projects. I work in Spanish, Basque and English. Available for an internship.",
   about_lead:"<em>Full-stack</em> from start to finish: thinking through the data, exposing it through a clean API and turning it into an interface people actually want to use.",
   about_body:"<p>I've built complete apps and interfaces with <strong>PHP, MySQL and JavaScript</strong>: authentication, REST APIs, relational databases and responsive frontends.</p><p>I work with <strong>vanilla JavaScript</strong> —no frameworks— to master the DOM, state and performance. I care about accessibility and clean code.</p>",
   facts_h:"// At a glance",facts_l1:"Education",facts_v1:"DAW · Web App Development",facts_l2:"Profile",facts_v2:"Junior full-stack",facts_l3:"Backend",facts_l4:"Frontend",facts_l5:"Languages",facts_l6:"Mode",facts_v6:"On-site · Hybrid · Remote",facts_l7:"Availability",facts_v7:"Open to an internship · junior",
   stack_h:"The tools I <em>build with</em>.",stack_p:"What I use daily, organized by where it fits in the project.",stack_c1:"Backend",stack_c2:"Database",stack_c3:"Frontend",stack_c4:"Tools",
-  work_h:"Some of my <em>projects</em>.",work_p:"Four real projects. Each one solves a concrete problem. Click any image to view it larger.",
+  work_h:"Some of my <em>projects</em>.",work_p:"Five real projects. Each one solves a concrete problem. Click any image to view it larger.",
   proc_h:"One project, <em>four phases</em>.",proc_p:"How I approach any build, from the first sketch to deployment.",
   proc_1h:"Understand",proc_1p:"I define the problem and goals.",proc_2h:"Model",proc_2p:"I design the database and API architecture.",proc_3h:"Build",proc_3p:"I program backend and frontend in iterations.",proc_4h:"Polish",proc_4p:"I test, optimize and review the visual detail.",
   contact_label:"Contact",contact_h:"Where to <em>find me</em>.",contact_lead:"I'm taking my first steps as a web developer and looking for a project to grow with. If you think I could be a fit, let me know: I'm one message away.",
@@ -523,7 +594,7 @@ function renderFeats(lang){
   });
 }
 function applyProjTexts(lang){
-  ['ubek','eskuetan','filmpick','zugazti'].forEach(p=>{
+  ['ubek','eskuetan','filmpick','zugazti','sukalde_azkena','sukalde_madera','sukalde_papel'].forEach(p=>{
     const src=(lang==='es'?PROJ_DATA.es:UI[lang]);
     const subEl=document.querySelector('[data-i18n="'+p+'_sub"]');
     const descEl=document.querySelector('[data-i18n="'+p+'_desc"]');
@@ -558,6 +629,12 @@ function buildLinks(lang){
 }
 // init
 curLang='es';
+// capturas de Sukalde aún pueden no existir → placeholder en vez de roto
+['sukalde_azkena','sukalde_madera','sukalde_papel'].forEach(proj=>{
+  const m=document.getElementById('main-'+proj);
+  if(m) m.onerror=function(){imgFallback(this)};
+  document.querySelectorAll('.gallery[data-proj="'+proj+'"] .thumb img').forEach(img=>img.onerror=function(){imgFallback(this)});
+});
 captureES();
 buildLinks('es');
 applyProjTexts('es');

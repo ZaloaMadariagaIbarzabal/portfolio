@@ -14,8 +14,7 @@ Datu-basea diseinatzen dut, APIa altxatzen dut, logika programatzen dut eta inte
 
 Weba erroko `index.html` da, eta hiru hizkuntzatan dago eskuragarri (ES · EU · EN), hizkuntza-aldaketa integratuarekin.
 
-- **Sarean:** https://portfolio-zaloa-madariaga.netlify.app
-- **Sarean (GitHub Pages):** https://ZaloaMadariagaIbarzabal.github.io/portfolio/
+- **Sarean:** https://ZaloaMadariagaIbarzabal.github.io/portfolio/
 - **Lokalean:** ireki `index.html` nabigatzailean.
 
 ### Biltegiaren edukia
@@ -29,6 +28,7 @@ Weba erroko `index.html` da, eta hiru hizkuntzatan dago eskuragarri (ES · EU ·
 
 ### Proiektu nabarmenak
 
+- **Sukalde** — Errezeta-gomendatzaile full-stack-a: dituzun osagaietatik abiatuta errezetak proposatzen ditu. Datu-base erlazionala, REST APIa eta interfaze eleaniztuna. PHP · MySQL · REST API · JavaScript · i18n.
 - **UBEK** — Web instituzional elebiduna (EU/ES) energia-komunitate batentzat. PHP · HTML5 · CSS3 · JavaScript · i18n.
 - **Eskuetan** — Bigarren eskuko arroparen e-commerce eleaniztuna, saskiarekin, gogoko zerrendarekin eta ordainketarekin. JavaScript vanilla · localStorage.
 - **FilmPick** — Film gomendatzailea bateragarritasunaren arabera, TMDb APIarekin. JavaScript · Fetch · TMDb API.
@@ -44,14 +44,8 @@ Tresnak: Git · GitHub · Figma · VS Code
 
 - Emaila: zmadariaga@gmail.com
 - Telefonoa: 646 218 511
-- GitHub: github.com/ZaloaMadariagaIbarzabal/portfolio
-- LinkedIn: linkedin.com/in/zaloa-madariaga-ibarzabal-a24075382
-
-### Estekak
-
-- GitHub: https://github.com/ZaloaMadariagaIbarzabal/portfolio
-- LinkedIn: https://linkedin.com/in/zaloa-madariaga-ibarzabal-a24075382
-- Netlify: https://portfolio-zaloa-madariaga.netlify.app
+- GitHub: github.com/ZaloaMadariagaIbarzabal/portfolio.git
+- LinkedIn: in/zaloa-madariaga-ibarzabal
 
 ---
 
@@ -65,8 +59,7 @@ Diseño la base de datos, levanto la API, programo la lógica y cuido la interfa
 
 La web es el `index.html` de la raíz y está disponible en tres idiomas (ES · EU · EN) con cambio de idioma integrado.
 
-- **En línea:** https://portfolio-zaloa-madariaga.netlify.app
-- **En línea (GitHub Pages):** https://ZaloaMadariagaIbarzabal.github.io/portfolio/
+- **En línea:** https://ZaloaMadariagaIbarzabal.github.io/portfolio/
 - **Local:** abre `index.html` en el navegador.
 
 ### Contenido del repositorio
@@ -80,6 +73,7 @@ La web es el `index.html` de la raíz y está disponible en tres idiomas (ES · 
 
 ### Proyectos destacados
 
+- **Sukalde** — Recomendador de recetas full-stack: sugiere recetas a partir de los ingredientes que tienes. Base de datos relacional, API REST e interfaz multilingüe. PHP · MySQL · REST API · JavaScript · i18n.
 - **UBEK** — Web institucional bilingüe (EU/ES) para una comunidad energética. PHP · HTML5 · CSS3 · JavaScript · i18n.
 - **Eskuetan** — E-commerce trilingüe de ropa de segunda mano, con carrito, wishlist y checkout. JavaScript vanilla · localStorage.
 - **FilmPick** — Recomendador de películas por compatibilidad, con API de TMDb. JavaScript · Fetch · TMDb API.
@@ -95,14 +89,8 @@ Herramientas: Git · GitHub · Figma · VS Code
 
 - Email: zmadariaga@gmail.com
 - Teléfono: 646 218 511
-- GitHub: github.com/ZaloaMadariagaIbarzabal/portfolio
-- LinkedIn: linkedin.com/in/zaloa-madariaga-ibarzabal-a24075382
-
-### Enlaces
-
-- GitHub: https://github.com/ZaloaMadariagaIbarzabal/portfolio
-- LinkedIn: https://linkedin.com/in/zaloa-madariaga-ibarzabal-a24075382
-- Netlify: https://portfolio-zaloa-madariaga.netlify.app
+- GitHub: github.com/ZaloaMadariagaIbarzabal/portfolio.git
+- LinkedIn: in/zaloa-madariaga-ibarzabal
 
 ---
 
@@ -116,8 +104,7 @@ I design the database, build the API, write the logic and polish the interface d
 
 The website is the `index.html` in the root and is available in three languages (ES · EU · EN) with built-in language switching.
 
-- **Online:** https://portfolio-zaloa-madariaga.netlify.app
-- **Online (GitHub Pages):** https://ZaloaMadariagaIbarzabal.github.io/portfolio/
+- **Online:** https://ZaloaMadariagaIbarzabal.github.io/portfolio/
 - **Local:** open `index.html` in your browser.
 
 ### Repository contents
@@ -131,6 +118,7 @@ The website is the `index.html` in the root and is available in three languages 
 
 ### Featured projects
 
+- **Sukalde** — Full-stack recipe recommender: suggests recipes based on the ingredients you already have. Relational database, REST API and multilingual interface. PHP · MySQL · REST API · JavaScript · i18n.
 - **UBEK** — Bilingual (EU/ES) institutional website for an energy community. PHP · HTML5 · CSS3 · JavaScript · i18n.
 - **Eskuetan** — Trilingual second-hand clothing e-commerce, with cart, wishlist and checkout. Vanilla JavaScript · localStorage.
 - **FilmPick** — Movie recommender by compatibility, with the TMDb API. JavaScript · Fetch · TMDb API.
@@ -146,11 +134,5 @@ Tools: Git · GitHub · Figma · VS Code
 
 - Email: zmadariaga@gmail.com
 - Phone: 646 218 511
-- GitHub: github.com/ZaloaMadariagaIbarzabal/portfolio
-- LinkedIn: linkedin.com/in/zaloa-madariaga-ibarzabal-a24075382
-
-### Links
-
-- GitHub: https://github.com/ZaloaMadariagaIbarzabal/portfolio
-- LinkedIn: https://linkedin.com/in/zaloa-madariaga-ibarzabal-a24075382
-- Netlify: https://portfolio-zaloa-madariaga.netlify.app
+- GitHub: github.com/ZaloaMadariagaIbarzabal/portfolio.git
+- LinkedIn: in/zaloa-madariaga-ibarzabal

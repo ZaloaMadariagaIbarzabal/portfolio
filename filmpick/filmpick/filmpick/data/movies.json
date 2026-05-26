@@ -1,0 +1,2844 @@
+[
+{
+"id": 1,
+"title": "Parásitos",
+"original": "Gisaengchung",
+"year": 2019,
+"duration": 132,
+"director": "Bong Joon-ho",
+"country": "Corea del Sur",
+"genres": [
+"thriller",
+"drama",
+"comedia"
+],
+"mood": [
+"pensar",
+"tension"
+],
+"audience": [
+"solo",
+"amigos",
+"cualquiera"
+],
+"rating": 8.6,
+"platforms": [
+"filmin",
+"movistar"
+],
+"poster": "https://image.tmdb.org/t/p/w500/aTymvKn4Z3JTwY2yIQDOZBJgWdc.jpg",
+"synopsis": "Una familia humilde se infiltra en la vida de una adinerada. Sátira social brillante con giros inesperados.",
+"tags": [
+"ricos y pobres",
+"crítica social",
+"sátira",
+"familia",
+"desigualdad",
+"corea"
+]
+},
+{
+"id": 2,
+"title": "Coco",
+"year": 2017,
+"duration": 105,
+"director": "Lee Unkrich",
+"country": "EE.UU.",
+"genres": [
+"animacion",
+"aventura",
+"familia"
+],
+"mood": [
+"emocionar",
+"escapar"
+],
+"audience": [
+"familia",
+"pareja",
+"cualquiera"
+],
+"rating": 8.4,
+"platforms": [
+"disney"
+],
+"poster": "https://image.tmdb.org/t/p/w500/eKi8R44giUKj4Tm7CYtNQX5tg9F.jpg",
+"synopsis": "Un niño viaja al Mundo de los Muertos para descubrir el secreto musical de su familia. Tierna y visualmente espectacular.",
+"tags": [
+"muerte",
+"familia",
+"música",
+"mexico",
+"día de muertos",
+"tradición",
+"duelo"
+]
+},
+{
+"id": 3,
+"title": "Mad Max: Furia en la carretera",
+"original": "Mad Max: Fury Road",
+"year": 2015,
+"duration": 120,
+"director": "George Miller",
+"country": "Australia",
+"genres": [
+"accion",
+"cienciaficcion",
+"aventura"
+],
+"mood": [
+"adrenalina",
+"escapar"
+],
+"audience": [
+"solo",
+"amigos"
+],
+"rating": 8.1,
+"platforms": [
+"hbo",
+"netflix"
+],
+"poster": "https://image.tmdb.org/t/p/w500/8tZYtuWezp8JbcsvHYO0O46tFbo.jpg",
+"synopsis": "Persecución postapocalíptica sin tregua por el desierto. Acción pura, coreografía visual impresionante.",
+"tags": [
+"postapocalíptico",
+"desierto",
+"persecución",
+"coches",
+"distopía",
+"feminismo"
+]
+},
+{
+"id": 4,
+"title": "La La Land",
+"year": 2016,
+"duration": 128,
+"director": "Damien Chazelle",
+"country": "EE.UU.",
+"genres": [
+"romance",
+"drama",
+"comedia"
+],
+"mood": [
+"emocionar",
+"ligero"
+],
+"audience": [
+"pareja",
+"solo"
+],
+"rating": 8.0,
+"platforms": [
+"movistar",
+"prime"
+],
+"poster": "https://image.tmdb.org/t/p/w500/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg",
+"synopsis": "Una actriz y un pianista se enamoran en Los Ángeles persiguiendo sus sueños. Musical melancólico y luminoso.",
+"tags": [
+"música",
+"jazz",
+"sueños",
+"hollywood",
+"amor",
+"baile",
+"los angeles"
+]
+},
+{
+"id": 5,
+"title": "El Padrino",
+"original": "The Godfather",
+"year": 1972,
+"duration": 175,
+"director": "Francis Ford Coppola",
+"country": "EE.UU.",
+"genres": [
+"drama",
+"thriller"
+],
+"mood": [
+"pensar",
+"tension"
+],
+"audience": [
+"solo",
+"amigos"
+],
+"rating": 9.2,
+"platforms": [
+"prime",
+"skyshowtime"
+],
+"poster": "https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
+"synopsis": "Saga sobre la familia Corleone y el imperio mafioso. Considerada una de las mejores películas jamás hechas.",
+"tags": [
+"mafia",
+"italoamericanos",
+"familia",
+"crimen",
+"venganza",
+"poder",
+"nueva york"
+]
+},
+{
+"id": 6,
+"title": "Spider-Man: Un nuevo universo",
+"original": "Spider-Man: Into the Spider-Verse",
+"year": 2018,
+"duration": 117,
+"director": "Persichetti, Ramsey, Rothman",
+"country": "EE.UU.",
+"genres": [
+"animacion",
+"accion",
+"aventura"
+],
+"mood": [
+"adrenalina",
+"escapar",
+"emocionar"
+],
+"audience": [
+"familia",
+"amigos",
+"cualquiera"
+],
+"rating": 8.4,
+"platforms": [
+"netflix",
+"movistar"
+],
+"poster": "https://image.tmdb.org/t/p/w500/iiZZdoQBEYBv6id8su7ImL0oCbD.jpg",
+"synopsis": "Miles Morales descubre el multiverso Spider-Man. Animación revolucionaria, banda sonora brutal.",
+"tags": [
+"superheroes",
+"spider-man",
+"multiverso",
+"adolescente",
+"cómic"
+]
+},
+{
+"id": 7,
+"title": "El club de la lucha",
+"original": "Fight Club",
+"year": 1999,
+"duration": 139,
+"director": "David Fincher",
+"country": "EE.UU.",
+"genres": [
+"thriller",
+"drama"
+],
+"mood": [
+"pensar",
+"tension"
+],
+"audience": [
+"solo",
+"amigos"
+],
+"rating": 8.8,
+"platforms": [
+"disney"
+],
+"poster": "https://image.tmdb.org/t/p/w500/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg",
+"synopsis": "Un oficinista insomne crea un club clandestino de lucha. Manifiesto generacional con giro inolvidable.",
+"tags": [
+"identidad",
+"consumismo",
+"masculinidad",
+"crítica social",
+"violencia",
+"giro final"
+]
+},
+{
+"id": 8,
+"title": "Up",
+"year": 2009,
+"duration": 96,
+"director": "Pete Docter",
+"country": "EE.UU.",
+"genres": [
+"animacion",
+"aventura",
+"familia"
+],
+"mood": [
+"emocionar",
+"ligero"
+],
+"audience": [
+"familia",
+"pareja",
+"cualquiera"
+],
+"rating": 8.3,
+"platforms": [
+"disney"
+],
+"poster": "https://image.tmdb.org/t/p/w500/mFvoEwSfLqbcWwFsDjQebn9bzFe.jpg",
+"synopsis": "Un viudo cumple el sueño de viaje atando globos a su casa. Sus 10 primeros minutos son cine puro.",
+"tags": [
+"vejez",
+"aventura",
+"duelo",
+"viuda",
+"sueños",
+"amistad"
+]
+},
+{
+"id": 9,
+"title": "Origen",
+"original": "Inception",
+"year": 2010,
+"duration": 148,
+"director": "Christopher Nolan",
+"country": "EE.UU.",
+"genres": [
+"cienciaficcion",
+"accion",
+"thriller"
+],
+"mood": [
+"pensar",
+"adrenalina"
+],
+"audience": [
+"solo",
+"amigos",
+"pareja"
+],
+"rating": 8.8,
+"platforms": [
+"netflix",
+"movistar"
+],
+"poster": "https://image.tmdb.org/t/p/w500/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg",
+"synopsis": "Ladrones que entran en sueños ajenos para robar secretos. Espectáculo mental con final debatido.",
+"tags": [
+"sueños",
+"subconsciente",
+"robo",
+"mente",
+"realidad",
+"tiempo"
+]
+},
+{
+"id": 10,
+"title": "Casablanca",
+"year": 1942,
+"duration": 102,
+"director": "Michael Curtiz",
+"country": "EE.UU.",
+"genres": [
+"romance",
+"drama"
+],
+"mood": [
+"emocionar",
+"pensar"
+],
+"audience": [
+"pareja",
+"solo"
+],
+"rating": 8.5,
+"platforms": [
+"filmin",
+"hbo"
+],
+"poster": "https://image.tmdb.org/t/p/w500/5K7cOHoay2mZusSLezBOY0Qxh8a.jpg",
+"synopsis": "Romance imposible en el Marruecos de la II Guerra Mundial. Diálogos eternos y final mítico.",
+"tags": [
+"guerra mundial",
+"amor imposible",
+"refugiados",
+"marruecos",
+"sacrificio",
+"nazis"
+]
+},
+{
+"id": 11,
+"title": "Get Out",
+"year": 2017,
+"duration": 104,
+"director": "Jordan Peele",
+"country": "EE.UU.",
+"genres": [
+"terror",
+"thriller"
+],
+"mood": [
+"tension",
+"pensar"
+],
+"audience": [
+"solo",
+"pareja",
+"amigos"
+],
+"rating": 7.8,
+"platforms": [
+"prime"
+],
+"poster": "https://image.tmdb.org/t/p/w500/tFXcEccSQMf3lfhfXKSU9iRBpa3.jpg",
+"synopsis": "Un joven negro visita a la familia blanca de su novia y algo va muy mal. Terror social con cabeza.",
+"tags": [
+"racismo",
+"terror social",
+"familia política",
+"hipnosis",
+"identidad"
+]
+},
+{
+"id": 12,
+"title": "El gran hotel Budapest",
+"original": "The Grand Budapest Hotel",
+"year": 2014,
+"duration": 99,
+"director": "Wes Anderson",
+"country": "EE.UU.",
+"genres": [
+"comedia",
+"drama",
+"aventura"
+],
+"mood": [
+"ligero",
+"reir",
+"pensar"
+],
+"audience": [
+"pareja",
+"solo",
+"amigos"
+],
+"rating": 8.1,
+"platforms": [
+"disney"
+],
+"poster": "https://image.tmdb.org/t/p/w500/eWdyYQreja6JGCzqHWXpWHDrrPo.jpg",
+"synopsis": "Las aventuras de un legendario conserje en un hotel europeo. Estética milimétrica y humor exquisito.",
+"tags": [
+"hotel",
+"mayordomo",
+"asesinato",
+"europa",
+"comedia oscura",
+"amistad"
+]
+},
+{
+"id": 13,
+"title": "Cuando Harry encontró a Sally",
+"original": "When Harry Met Sally",
+"year": 1989,
+"duration": 95,
+"director": "Rob Reiner",
+"country": "EE.UU.",
+"genres": [
+"romance",
+"comedia"
+],
+"mood": [
+"ligero",
+"reir",
+"emocionar"
+],
+"audience": [
+"pareja",
+"solo"
+],
+"rating": 7.7,
+"platforms": [
+"hbo"
+],
+"poster": "https://image.tmdb.org/t/p/w500/3wkbKeowUp1Zpkw1KkBqMWbt0UD.jpg",
+"synopsis": "¿Pueden un hombre y una mujer ser solo amigos? La comedia romántica que sentó cátedra.",
+"tags": [
+"amistad",
+"amor",
+"nueva york",
+"navidad",
+"pareja"
+]
+},
+{
+"id": 14,
+"title": "Toy Story",
+"year": 1995,
+"duration": 81,
+"director": "John Lasseter",
+"country": "EE.UU.",
+"genres": [
+"animacion",
+"familia",
+"aventura"
+],
+"mood": [
+"ligero",
+"reir",
+"emocionar"
+],
+"audience": [
+"familia",
+"cualquiera"
+],
+"rating": 8.3,
+"platforms": [
+"disney"
+],
+"poster": "https://image.tmdb.org/t/p/w500/uXDfjJbdP4ijW5hWSBrPrlKpxab.jpg",
+"synopsis": "Los juguetes cobran vida cuando los humanos no miran. La que cambió el cine de animación para siempre.",
+"tags": [
+"juguetes",
+"amistad",
+"infancia",
+"celos",
+"aventura"
+]
+},
+{
+"id": 15,
+"title": "El silencio de los corderos",
+"original": "The Silence of the Lambs",
+"year": 1991,
+"duration": 118,
+"director": "Jonathan Demme",
+"country": "EE.UU.",
+"genres": [
+"thriller",
+"terror"
+],
+"mood": [
+"tension",
+"pensar"
+],
+"audience": [
+"solo",
+"pareja"
+],
+"rating": 8.6,
+"platforms": [
+"movistar",
+"skyshowtime"
+],
+"poster": "https://image.tmdb.org/t/p/w500/uS9m8OBk1A8eM9I042bx8XXpqAq.jpg",
+"synopsis": "Una agente del FBI entrevista a Hannibal Lecter para atrapar a otro asesino. Tensión psicológica perfecta.",
+"tags": [
+"asesino en serie",
+"fbi",
+"psicópata",
+"caníbal",
+"investigación",
+"thriller psicológico"
+]
+},
+{
+"id": 16,
+"title": "Forrest Gump",
+"year": 1994,
+"duration": 142,
+"director": "Robert Zemeckis",
+"country": "EE.UU.",
+"genres": [
+"drama",
+"romance",
+"comedia"
+],
+"mood": [
+"emocionar",
+"escapar"
+],
+"audience": [
+"familia",
+"pareja",
+"cualquiera"
+],
+"rating": 8.8,
+"platforms": [
+"netflix",
+"prime"
+],
+"poster": "https://image.tmdb.org/t/p/w500/h5J4W4veyxMXDMjeNxZI46TsHOb.jpg",
+"synopsis": "Un hombre con coeficiente bajo atraviesa décadas claves de EE.UU. Emocional, divertida y memorable.",
+"tags": [
+"vida",
+"estados unidos",
+"historia",
+"amor",
+"guerra de vietnam",
+"discapacidad",
+"biopic ficticio"
+]
+},
+{
+"id": 17,
+"title": "Cisne negro",
+"original": "Black Swan",
+"year": 2010,
+"duration": 108,
+"director": "Darren Aronofsky",
+"country": "EE.UU.",
+"genres": [
+"drama",
+"thriller",
+"terror"
+],
+"mood": [
+"tension",
+"pensar"
+],
+"audience": [
+"solo",
+"pareja"
+],
+"rating": 8.0,
+"platforms": [
+"disney"
+],
+"poster": "https://image.tmdb.org/t/p/w500/rH79sBLwJiHRfOXyc6vXcLnq31I.jpg",
+"synopsis": "Una bailarina obsesionada con la perfección pierde el contacto con la realidad. Inquietante y bellísima.",
+"tags": [
+"ballet",
+"obsesión",
+"doble personalidad",
+"arte",
+"perfección",
+"locura"
+]
+},
+{
+"id": 18,
+"title": "Blade Runner 2049",
+"year": 2017,
+"duration": 164,
+"director": "Denis Villeneuve",
+"country": "EE.UU.",
+"genres": [
+"cienciaficcion",
+"drama",
+"thriller"
+],
+"mood": [
+"pensar",
+"tension"
+],
+"audience": [
+"solo",
+"pareja"
+],
+"rating": 8.0,
+"platforms": [
+"movistar",
+"prime"
+],
+"poster": "https://image.tmdb.org/t/p/w500/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg",
+"synopsis": "Un blade runner descubre un secreto que reabre la guerra hombre/replicante. Visualmente abrumadora.",
+"tags": [
+"replicantes",
+"futuro",
+"distopía",
+"identidad",
+"memoria",
+"inteligencia artificial"
+]
+},
+{
+"id": 19,
+"title": "Una mente maravillosa",
+"original": "A Beautiful Mind",
+"year": 2001,
+"duration": 135,
+"director": "Ron Howard",
+"country": "EE.UU.",
+"genres": [
+"drama",
+"biografico",
+"romance"
+],
+"mood": [
+"emocionar",
+"pensar"
+],
+"audience": [
+"pareja",
+"solo"
+],
+"rating": 8.2,
+"platforms": [
+"prime"
+],
+"poster": "https://image.tmdb.org/t/p/w500/zwzWCmH72OSC9NA0ipoqw5Zjya8.jpg",
+"synopsis": "La vida del matemático John Nash, premio Nobel y esquizofrénico. Russell Crowe enorme.",
+"tags": [
+"matemáticas",
+"esquizofrenia",
+"genio",
+"nobel",
+"biopic",
+"enfermedad mental"
+]
+},
+{
+"id": 20,
+"title": "Amélie",
+"original": "Le Fabuleux Destin d'Amélie Poulain",
+"year": 2001,
+"duration": 122,
+"director": "Jean-Pierre Jeunet",
+"country": "Francia",
+"genres": [
+"romance",
+"comedia",
+"drama"
+],
+"mood": [
+"ligero",
+"emocionar",
+"escapar"
+],
+"audience": [
+"pareja",
+"solo"
+],
+"rating": 8.3,
+"platforms": [
+"filmin"
+],
+"poster": "https://image.tmdb.org/t/p/w500/3kPBuJSRfvk5cYrre9aXkD7N6gZ.jpg",
+"synopsis": "Una camarera tímida de Montmartre decide cambiar las vidas de quienes la rodean. Encantadora.",
+"tags": [
+"parís",
+"soledad",
+"gestos altruistas",
+"infancia",
+"amor",
+"rarezas"
+]
+},
+{
+"id": 21,
+"title": "Whiplash",
+"year": 2014,
+"duration": 106,
+"director": "Damien Chazelle",
+"country": "EE.UU.",
+"genres": [
+"drama",
+"thriller"
+],
+"mood": [
+"tension",
+"emocionar"
+],
+"audience": [
+"solo",
+"pareja",
+"amigos"
+],
+"rating": 8.5,
+"platforms": [
+"filmin",
+"movistar"
+],
+"poster": "https://image.tmdb.org/t/p/w500/oIWQolRzZfTtmU91lQjvayMCJpM.jpg",
+"synopsis": "Un joven baterista sufre las exigencias brutales de su profesor. Adrenalina musical de la buena.",
+"tags": [
+"música",
+"batería",
+"jazz",
+"maestro tirano",
+"perfección",
+"obsesión"
+]
+},
+{
+"id": 22,
+"title": "Buscando a Nemo",
+"original": "Finding Nemo",
+"year": 2003,
+"duration": 100,
+"director": "Andrew Stanton",
+"country": "EE.UU.",
+"genres": [
+"animacion",
+"aventura",
+"familia"
+],
+"mood": [
+"ligero",
+"emocionar",
+"escapar"
+],
+"audience": [
+"familia",
+"cualquiera"
+],
+"rating": 8.2,
+"platforms": [
+"disney"
+],
+"poster": "https://image.tmdb.org/t/p/w500/eHuGQ10FUzK1mdOY69wF5pGgEf5.jpg",
+"synopsis": "Un pez payaso busca a su hijo perdido cruzando el océano. Bella, tierna y divertidísima.",
+"tags": [
+"pez",
+"océano",
+"padre e hijo",
+"amistad",
+"aventura",
+"autralia"
+]
+},
+{
+"id": 23,
+"title": "Drive",
+"year": 2011,
+"duration": 100,
+"director": "Nicolas Winding Refn",
+"country": "EE.UU.",
+"genres": [
+"thriller",
+"drama",
+"accion"
+],
+"mood": [
+"tension",
+"escapar"
+],
+"audience": [
+"solo",
+"pareja"
+],
+"rating": 7.8,
+"platforms": [
+"movistar"
+],
+"poster": "https://image.tmdb.org/t/p/w500/602vevIURmpDfzbnu96521Mloog.jpg",
+"synopsis": "Un conductor de huidas se enamora de su vecina y todo se complica. Estilizada, neón y silencios.",
+"tags": [
+"conductor",
+"crimen",
+"silencio",
+"los angeles",
+"noir",
+"estilizada"
+]
+},
+{
+"id": 24,
+"title": "Volver",
+"year": 2006,
+"duration": 121,
+"director": "Pedro Almodóvar",
+"country": "España",
+"genres": [
+"drama",
+"comedia"
+],
+"mood": [
+"emocionar",
+"pensar"
+],
+"audience": [
+"pareja",
+"solo"
+],
+"rating": 7.5,
+"platforms": [
+"filmin",
+"movistar"
+],
+"poster": "https://image.tmdb.org/t/p/w500/ePzNV5buYyHzpcjuTtN1Q9XlPxd.jpg",
+"synopsis": "Tres generaciones de mujeres manchegas y un secreto familiar. Penélope Cruz en estado de gracia.",
+"tags": [
+"madre e hija",
+"mancha",
+"fantasmas",
+"secretos familiares",
+"mujeres",
+"almodóvar"
+]
+},
+{
+"id": 25,
+"title": "El secreto de sus ojos",
+"year": 2009,
+"duration": 129,
+"director": "Juan José Campanella",
+"country": "Argentina",
+"genres": [
+"drama",
+"thriller",
+"romance"
+],
+"mood": [
+"tension",
+"emocionar"
+],
+"audience": [
+"pareja",
+"solo"
+],
+"rating": 8.2,
+"platforms": [
+"filmin"
+],
+"poster": "https://image.tmdb.org/t/p/w500/9OkbN39LcjN6TIaeOgkw4t1nWyA.jpg",
+"synopsis": "Un agente jubilado reabre un caso de hace 25 años. Oscar a mejor película extranjera.",
+"tags": [
+"juicio",
+"asesinato",
+"detective",
+"investigación",
+"pasado",
+"argentina"
+]
+},
+{
+"id": 26,
+"title": "Joker",
+"year": 2019,
+"duration": 122,
+"director": "Todd Phillips",
+"country": "EE.UU.",
+"genres": [
+"drama",
+"thriller"
+],
+"mood": [
+"tension",
+"pensar"
+],
+"audience": [
+"solo",
+"amigos"
+],
+"rating": 8.4,
+"platforms": [
+"hbo"
+],
+"poster": "https://image.tmdb.org/t/p/w500/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg",
+"synopsis": "El origen del Joker como crítica social. Joaquin Phoenix gana el Oscar.",
+"tags": [
+"villano",
+"enfermedad mental",
+"soledad",
+"crítica social",
+"cómic adulto",
+"gotham"
+]
+},
+{
+"id": 27,
+"title": "Avatar",
+"year": 2009,
+"duration": 162,
+"director": "James Cameron",
+"country": "EE.UU.",
+"genres": [
+"cienciaficcion",
+"aventura",
+"accion"
+],
+"mood": [
+"escapar",
+"adrenalina"
+],
+"audience": [
+"familia",
+"amigos",
+"pareja"
+],
+"rating": 7.9,
+"platforms": [
+"disney"
+],
+"poster": "https://image.tmdb.org/t/p/w500/jRXYjXNq0Cs2TcJjLkki24MLp7u.jpg",
+"synopsis": "Un exmarine en cuerpo alienígena descubre un planeta a punto de ser destruido. Espectáculo total.",
+"tags": [
+"alienígenas",
+"planeta",
+"naturaleza",
+"colonialismo",
+"guerra",
+"ecologismo"
+]
+},
+{
+"id": 28,
+"title": "Memoria de mis putas tristes",
+"year": 2011,
+"duration": 94,
+"director": "Henning Carlsen",
+"country": "México",
+"genres": [
+"drama",
+"romance"
+],
+"mood": [
+"pensar",
+"emocionar"
+],
+"audience": [
+"solo"
+],
+"rating": 6.0,
+"platforms": [
+"filmin"
+],
+"poster": "https://image.tmdb.org/t/p/w500/d0HCnGFXVH9DjuPCMGCV4vCRvDb.jpg",
+"synopsis": "Un anciano periodista se obsesiona con una joven virgen. Adaptación de García Márquez.",
+"tags": [
+"vejez",
+"amor tardío",
+"prostitución",
+"periodismo",
+"gabriel garcía márquez"
+]
+},
+{
+"id": 29,
+"title": "El laberinto del fauno",
+"year": 2006,
+"duration": 118,
+"director": "Guillermo del Toro",
+"country": "España/México",
+"genres": [
+"fantasia",
+"drama",
+"terror"
+],
+"mood": [
+"tension",
+"emocionar",
+"escapar"
+],
+"audience": [
+"solo",
+"pareja"
+],
+"rating": 8.2,
+"platforms": [
+"filmin",
+"movistar"
+],
+"poster": "https://image.tmdb.org/t/p/w500/u63a3muqilT0LIBVcQHvAESJSO5.jpg",
+"synopsis": "En la posguerra española, una niña descubre un mundo mágico inquietante. Belleza oscura.",
+"tags": [
+"guerra civil española",
+"fantasía oscura",
+"niñez",
+"magia",
+"posguerra",
+"fauno"
+]
+},
+{
+"id": 30,
+"title": "Pulp Fiction",
+"year": 1994,
+"duration": 154,
+"director": "Quentin Tarantino",
+"country": "EE.UU.",
+"genres": [
+"thriller",
+"drama",
+"comedia"
+],
+"mood": [
+"tension",
+"reir"
+],
+"audience": [
+"solo",
+"amigos"
+],
+"rating": 8.9,
+"platforms": [
+"netflix"
+],
+"poster": "https://image.tmdb.org/t/p/w500/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg",
+"synopsis": "Historias entrelazadas de gánsteres, boxeadores y atracadores en Los Ángeles. Diálogos legendarios.",
+"tags": [
+"gánsters",
+"historias entrelazadas",
+"los angeles",
+"drogas",
+"violencia",
+"diálogos"
+]
+},
+{
+"id": 31,
+"title": "Matrix",
+"original": "The Matrix",
+"year": 1999,
+"duration": 136,
+"director": "Wachowski",
+"country": "EE.UU.",
+"genres": [
+"cienciaficcion",
+"accion"
+],
+"mood": [
+"pensar",
+"adrenalina",
+"escapar"
+],
+"audience": [
+"solo",
+"amigos",
+"pareja"
+],
+"rating": 8.7,
+"platforms": [
+"hbo",
+"movistar"
+],
+"poster": "https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg",
+"synopsis": "Un hacker descubre que la realidad es una simulación. La pastilla roja o azul.",
+"tags": [
+"simulación",
+"realidad virtual",
+"hackers",
+"rebeldes",
+"distopía",
+"inteligencia artificial"
+]
+},
+{
+"id": 32,
+"title": "Encanto",
+"year": 2021,
+"duration": 109,
+"director": "Byron Howard, Jared Bush",
+"country": "EE.UU.",
+"genres": [
+"animacion",
+"familia",
+"fantasia"
+],
+"mood": [
+"ligero",
+"emocionar",
+"escapar"
+],
+"audience": [
+"familia",
+"cualquiera"
+],
+"rating": 7.3,
+"platforms": [
+"disney"
+],
+"poster": "https://image.tmdb.org/t/p/w500/4j0PNHkMr5ax3IA8tjtxcmPU3QT.jpg",
+"synopsis": "Una familia colombiana con poderes mágicos, salvo una. Música pegadiza y diseño precioso.",
+"tags": [
+"familia",
+"magia",
+"colombia",
+"música",
+"poderes",
+"generaciones"
+]
+},
+{
+"id": 33,
+"title": "Dune",
+"year": 2021,
+"duration": 155,
+"director": "Denis Villeneuve",
+"country": "EE.UU.",
+"genres": [
+"cienciaficcion",
+"aventura",
+"drama"
+],
+"mood": [
+"pensar",
+"escapar"
+],
+"audience": [
+"solo",
+"amigos",
+"pareja"
+],
+"rating": 8.0,
+"platforms": [
+"hbo"
+],
+"poster": "https://image.tmdb.org/t/p/w500/d5NXSklXo0qyIYkgV94XAgMIckC.jpg",
+"synopsis": "Adaptación del libro de Herbert sobre el desierto y la especia. Visualmente colosal.",
+"tags": [
+"desierto",
+"planeta",
+"profecía",
+"política",
+"especia",
+"libro adaptado"
+]
+},
+{
+"id": 34,
+"title": "Tár",
+"year": 2022,
+"duration": 158,
+"director": "Todd Field",
+"country": "EE.UU.",
+"genres": [
+"drama"
+],
+"mood": [
+"pensar",
+"tension"
+],
+"audience": [
+"solo"
+],
+"rating": 7.3,
+"platforms": [
+"movistar"
+],
+"poster": "https://image.tmdb.org/t/p/w500/eovqQ34mxDR2ZNG93kvweKa1ZSL.jpg",
+"synopsis": "Una directora de orquesta en la cima cae por acusaciones. Cate Blanchett magistral.",
+"tags": [
+"música clásica",
+"directora orquesta",
+"cancelación",
+"abuso de poder",
+"caída"
+]
+},
+{
+"id": 35,
+"title": "Todo a la vez en todas partes",
+"original": "Everything Everywhere All at Once",
+"year": 2022,
+"duration": 139,
+"director": "Daniels",
+"country": "EE.UU.",
+"genres": [
+"cienciaficcion",
+"comedia",
+"accion"
+],
+"mood": [
+"adrenalina",
+"reir",
+"pensar",
+"emocionar"
+],
+"audience": [
+"amigos",
+"pareja"
+],
+"rating": 7.8,
+"platforms": [
+"movistar",
+"prime"
+],
+"poster": "https://image.tmdb.org/t/p/w500/w3LxiVYdWWRvEVdn5RYq6jIqkb1.jpg",
+"synopsis": "Una contable china salta entre universos para salvar la realidad. Caótica, tierna y brillante.",
+"tags": [
+"multiverso",
+"familia china",
+"caos",
+"lavandería",
+"realidades alternativas",
+"amor"
+]
+},
+{
+"id": 36,
+"title": "Top Gun: Maverick",
+"year": 2022,
+"duration": 130,
+"director": "Joseph Kosinski",
+"country": "EE.UU.",
+"genres": [
+"accion",
+"drama"
+],
+"mood": [
+"adrenalina",
+"emocionar",
+"escapar"
+],
+"audience": [
+"familia",
+"amigos",
+"pareja"
+],
+"rating": 8.3,
+"platforms": [
+"prime",
+"skyshowtime"
+],
+"poster": "https://image.tmdb.org/t/p/w500/62HCnUTziyWcpDaBO2i1DX17ljH.jpg",
+"synopsis": "Maverick vuelve para entrenar a una nueva generación de pilotos. Acción aérea real y nostalgia.",
+"tags": [
+"pilotos",
+"aviones",
+"caza",
+"amistad",
+"nostalgia",
+"misión"
+]
+},
+{
+"id": 37,
+"title": "Roma",
+"year": 2018,
+"duration": 135,
+"director": "Alfonso Cuarón",
+"country": "México",
+"genres": [
+"drama"
+],
+"mood": [
+"pensar",
+"emocionar"
+],
+"audience": [
+"solo",
+"pareja"
+],
+"rating": 7.7,
+"platforms": [
+"netflix"
+],
+"poster": "https://image.tmdb.org/t/p/w500/dtZMobLwoLJTfkUuQBPVQEXgJTb.jpg",
+"synopsis": "Una empleada doméstica en el México de los 70. Blanco y negro, contemplativa, premiadísima.",
+"tags": [
+"empleada doméstica",
+"méxico",
+"años 70",
+"familia",
+"maternidad",
+"blanco y negro"
+]
+},
+{
+"id": 38,
+"title": "Hereditary",
+"year": 2018,
+"duration": 127,
+"director": "Ari Aster",
+"country": "EE.UU.",
+"genres": [
+"terror",
+"drama"
+],
+"mood": [
+"tension"
+],
+"audience": [
+"solo",
+"amigos"
+],
+"rating": 7.3,
+"platforms": [
+"filmin"
+],
+"poster": "https://image.tmdb.org/t/p/w500/p9fmuz2Oj3HtEDQlTjB4n9Hjcm1.jpg",
+"synopsis": "Tras la muerte de la abuela, una familia descubre algo aterrador. Terror lento que se queda dentro.",
+"tags": [
+"herencia",
+"duelo",
+"culto",
+"demonios",
+"familia",
+"pérdida"
+]
+},
+{
+"id": 39,
+"title": "Lo que el viento se llevó",
+"original": "Gone with the Wind",
+"year": 1939,
+"duration": 238,
+"director": "Victor Fleming",
+"country": "EE.UU.",
+"genres": [
+"romance",
+"drama"
+],
+"mood": [
+"emocionar",
+"escapar"
+],
+"audience": [
+"pareja",
+"solo"
+],
+"rating": 8.1,
+"platforms": [
+"hbo"
+],
+"poster": "https://image.tmdb.org/t/p/w500/qjiskwlV1qQzRCjwsBHZk2EwuQg.jpg",
+"synopsis": "Pasión y guerra en el sur de EE.UU. Épica clásica de cuatro horas.",
+"tags": [
+"guerra civil americana",
+"romance épico",
+"sur de estados unidos",
+"esclavitud",
+"pasión"
+]
+},
+{
+"id": 40,
+"title": "Spirited Away",
+"original": "El viaje de Chihiro",
+"year": 2001,
+"duration": 125,
+"director": "Hayao Miyazaki",
+"country": "Japón",
+"genres": [
+"animacion",
+"fantasia",
+"aventura"
+],
+"mood": [
+"escapar",
+"emocionar",
+"pensar"
+],
+"audience": [
+"familia",
+"solo",
+"cualquiera"
+],
+"rating": 8.6,
+"platforms": [
+"netflix"
+],
+"poster": "https://image.tmdb.org/t/p/w500/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg",
+"synopsis": "Una niña queda atrapada en un mundo de espíritus. Obra maestra de Studio Ghibli.",
+"tags": [
+"fantasía",
+"espíritus",
+"japón",
+"niña perdida",
+"magia",
+"studio ghibli"
+]
+},
+{
+"id": 41,
+"title": "Sing Street",
+"year": 2016,
+"duration": 106,
+"director": "John Carney",
+"country": "Irlanda",
+"genres": [
+"drama",
+"romance",
+"comedia"
+],
+"mood": [
+"ligero",
+"emocionar",
+"reir"
+],
+"audience": [
+"familia",
+"pareja",
+"amigos"
+],
+"rating": 7.9,
+"platforms": [
+"filmin"
+],
+"poster": "https://image.tmdb.org/t/p/w500/zBshMzlh3sOlejHbHcsuhsRSlZb.jpg",
+"synopsis": "Un adolescente en el Dublín de los 80 monta una banda para ligar. Pura energía.",
+"tags": [
+"adolescentes",
+"banda de música",
+"irlanda",
+"años 80",
+"primer amor",
+"colegio"
+]
+},
+{
+"id": 42,
+"title": "Misión: Imposible - Fallout",
+"original": "Mission: Impossible - Fallout",
+"year": 2018,
+"duration": 147,
+"director": "Christopher McQuarrie",
+"country": "EE.UU.",
+"genres": [
+"accion",
+"thriller",
+"aventura"
+],
+"mood": [
+"adrenalina",
+"escapar"
+],
+"audience": [
+"amigos",
+"solo",
+"pareja"
+],
+"rating": 7.7,
+"platforms": [
+"prime",
+"skyshowtime"
+],
+"poster": "https://image.tmdb.org/t/p/w500/AkJQpZp9WoNdj7pLYSj1L0RcMMN.jpg",
+"synopsis": "Ethan Hunt persigue plutonio robado por el mundo. Acción analógica de alto octanaje.",
+"tags": [
+"espía",
+"misión imposible",
+"persecuciones",
+"plutonio",
+"acrobacias"
+]
+},
+{
+"id": 43,
+"title": "Frozen",
+"year": 2013,
+"duration": 102,
+"director": "Buck, Lee",
+"country": "EE.UU.",
+"genres": [
+"animacion",
+"familia",
+"fantasia"
+],
+"mood": [
+"ligero",
+"emocionar"
+],
+"audience": [
+"familia"
+],
+"rating": 7.4,
+"platforms": [
+"disney"
+],
+"poster": "https://image.tmdb.org/t/p/w500/kgwjIb2JDHRhNk13lmSxiClFjVk.jpg",
+"synopsis": "Dos hermanas, una con poderes de hielo. Olaf y 'Let it Go'. Imprescindible con peques.",
+"tags": [
+"hermanas",
+"reinas",
+"poderes de hielo",
+"aventura",
+"amor fraternal",
+"musical"
+]
+},
+{
+"id": 44,
+"title": "Boyhood",
+"year": 2014,
+"duration": 165,
+"director": "Richard Linklater",
+"country": "EE.UU.",
+"genres": [
+"drama"
+],
+"mood": [
+"pensar",
+"emocionar"
+],
+"audience": [
+"solo",
+"pareja"
+],
+"rating": 7.9,
+"platforms": [
+"filmin"
+],
+"poster": "https://image.tmdb.org/t/p/w500/eKi8R44giUKj4Tm7CYtNQX5tg9F.jpg",
+"synopsis": "Rodada durante 12 años con los mismos actores. La vida pasando ante la cámara.",
+"tags": [
+"crecimiento",
+"familia",
+"tiempo",
+"adolescencia",
+"divorcio",
+"rodaje 12 años"
+]
+},
+{
+"id": 45,
+"title": "Birdman",
+"year": 2014,
+"duration": 119,
+"director": "Alejandro G. Iñárritu",
+"country": "EE.UU.",
+"genres": [
+"drama",
+"comedia"
+],
+"mood": [
+"pensar",
+"reir"
+],
+"audience": [
+"solo",
+"pareja"
+],
+"rating": 7.7,
+"platforms": [
+"disney"
+],
+"poster": "https://image.tmdb.org/t/p/w500/rzdPqYx7Um4FUZeD8wpXqjAUcEm.jpg",
+"synopsis": "Un actor venido a menos prepara una obra en Broadway. Rodada como un solo plano.",
+"tags": [
+"teatro",
+"broadway",
+"actor",
+"fama",
+"crisis personal",
+"plano secuencia"
+]
+},
+{
+"id": 46,
+"title": "Shrek",
+"year": 2001,
+"duration": 90,
+"director": "Andrew Adamson, Vicky Jenson",
+"country": "EE.UU.",
+"genres": [
+"animacion",
+"comedia",
+"familia"
+],
+"mood": [
+"reir",
+"ligero",
+"emocionar"
+],
+"audience": [
+"familia",
+"cualquiera"
+],
+"rating": 7.9,
+"platforms": [
+"netflix"
+],
+"poster": "https://image.tmdb.org/t/p/w500/iB64vpL3dIObOtMZgX3RqdVdQDc.jpg",
+"synopsis": "Un ogro y un burro rescatan a una princesa atípica. Subversión del cuento clásico.",
+"tags": [
+"ogro",
+"princesa",
+"cuento",
+"subversión",
+"humor",
+"burro"
+]
+},
+{
+"id": 47,
+"title": "La habitación",
+"original": "Room",
+"year": 2015,
+"duration": 118,
+"director": "Lenny Abrahamson",
+"country": "Irlanda/Canadá",
+"genres": [
+"drama",
+"thriller"
+],
+"mood": [
+"emocionar",
+"tension",
+"pensar"
+],
+"audience": [
+"solo",
+"pareja"
+],
+"rating": 8.1,
+"platforms": [
+"filmin"
+],
+"poster": "https://image.tmdb.org/t/p/w500/eqFckcHuFCT1FrzLOAvXBb4jHwq.jpg",
+"synopsis": "Una madre y su hijo viven cautivos en un cobertizo. Brie Larson gana el Oscar.",
+"tags": [
+"cautiverio",
+"madre e hijo",
+"libertad",
+"trauma",
+"maternidad"
+]
+},
+{
+"id": 48,
+"title": "Misérables",
+"year": 2012,
+"duration": 158,
+"director": "Tom Hooper",
+"country": "Reino Unido",
+"genres": [
+"drama",
+"romance"
+],
+"mood": [
+"emocionar"
+],
+"audience": [
+"pareja",
+"familia"
+],
+"rating": 7.6,
+"platforms": [
+"prime"
+],
+"poster": "https://image.tmdb.org/t/p/w500/lvjucU9wQfmPzg5BlDxe9KEz5HU.jpg",
+"synopsis": "Musical sobre la Francia revolucionaria, basado en Víctor Hugo. Cantado en directo.",
+"tags": [
+"musical",
+"revolución francesa",
+"pobreza",
+"redención",
+"parís"
+]
+},
+{
+"id": 49,
+"title": "Antes del amanecer",
+"original": "Before Sunrise",
+"year": 1995,
+"duration": 105,
+"director": "Richard Linklater",
+"country": "EE.UU.",
+"genres": [
+"romance",
+"drama"
+],
+"mood": [
+"emocionar",
+"pensar",
+"ligero"
+],
+"audience": [
+"pareja",
+"solo"
+],
+"rating": 8.1,
+"platforms": [
+"filmin"
+],
+"poster": "https://image.tmdb.org/t/p/w500/8tkAerouDPYzN0Ifd6QMQfvuOzs.jpg",
+"synopsis": "Dos desconocidos pasan una noche caminando por Viena. Diálogo puro, magia.",
+"tags": [
+"amor",
+"noche",
+"viena",
+"conversación",
+"desconocidos",
+"romanticismo"
+]
+},
+{
+"id": 50,
+"title": "It Follows",
+"year": 2014,
+"duration": 100,
+"director": "David Robert Mitchell",
+"country": "EE.UU.",
+"genres": [
+"terror",
+"thriller"
+],
+"mood": [
+"tension"
+],
+"audience": [
+"solo",
+"amigos",
+"pareja"
+],
+"rating": 6.8,
+"platforms": [
+"filmin"
+],
+"poster": "https://image.tmdb.org/t/p/w500/g3uwHbiSwwApF7P58SAdvLQ8XJP.jpg",
+"synopsis": "Algo te persigue caminando despacio, solo tú puedes verlo. Terror sutil y excelente.",
+"tags": [
+"maldición",
+"sexo",
+"persecución",
+"fantasma",
+"adolescentes",
+"terror lento"
+]
+},
+{
+"id": 51,
+"title": "Padre no hay más que uno",
+"year": 2019,
+"duration": 98,
+"director": "Santiago Segura",
+"country": "España",
+"genres": [
+"comedia",
+"familia"
+],
+"mood": [
+"reir",
+"ligero"
+],
+"audience": [
+"familia"
+],
+"rating": 5.4,
+"platforms": [
+"prime",
+"movistar"
+],
+"poster": "https://image.tmdb.org/t/p/w500/aLQt3hkDBdNbBhsOAj1bV7q7yNc.jpg",
+"synopsis": "Un padre se queda solo con sus cinco hijos cuando se va la madre. Para reírse en familia.",
+"tags": [
+"padre soltero",
+"hijos",
+"comedia familiar",
+"caos doméstico",
+"verano"
+]
+},
+{
+"id": 52,
+"title": "Ocho apellidos vascos",
+"year": 2014,
+"duration": 98,
+"director": "Emilio Martínez-Lázaro",
+"country": "España",
+"genres": [
+"comedia",
+"romance"
+],
+"mood": [
+"reir",
+"ligero"
+],
+"audience": [
+"familia",
+"pareja",
+"amigos"
+],
+"rating": 6.4,
+"platforms": [
+"movistar",
+"prime"
+],
+"poster": "https://image.tmdb.org/t/p/w500/aTfdMK6dV1KaiL56pTKgYNF3a06.jpg",
+"synopsis": "Un sevillano se inventa raíces vascas para conquistar a una bilbaína. La comedia española más taquillera.",
+"tags": [
+"euskal herria",
+"país vasco",
+"sevilla",
+"identidad",
+"cultura",
+"comedia romántica"
+]
+},
+{
+"id": 53,
+"title": "Cinema Paradiso",
+"year": 1988,
+"duration": 155,
+"director": "Giuseppe Tornatore",
+"country": "Italia",
+"genres": [
+"drama",
+"romance"
+],
+"mood": [
+"emocionar",
+"pensar"
+],
+"audience": [
+"pareja",
+"solo",
+"familia"
+],
+"rating": 8.5,
+"platforms": [
+"filmin"
+],
+"poster": "https://image.tmdb.org/t/p/w500/8SRUfRUi6x4O68n0VCbDNRa6iGL.jpg",
+"synopsis": "Un niño se enamora del cine en un pueblo siciliano. Banda sonora de Morricone para llorar.",
+"tags": [
+"cine",
+"infancia",
+"sicilia",
+"amistad",
+"nostalgia",
+"proyeccionista"
+]
+},
+{
+"id": 54,
+"title": "El viaje de Tarzán",
+"original": "Tarzan",
+"year": 1999,
+"duration": 88,
+"director": "Buck, Lima",
+"country": "EE.UU.",
+"genres": [
+"animacion",
+"aventura",
+"familia"
+],
+"mood": [
+"escapar",
+"emocionar"
+],
+"audience": [
+"familia"
+],
+"rating": 7.3,
+"platforms": [
+"disney"
+],
+"poster": "https://image.tmdb.org/t/p/w500/AhfKQGNGYy8w1bgmHr3LhKjuPjE.jpg",
+"synopsis": "Tarzán criado por gorilas se enfrenta a su origen humano. Música de Phil Collins.",
+"tags": [
+"gorilas",
+"jungla",
+"inglesa",
+"identidad",
+"naturaleza",
+"aventura"
+]
+},
+{
+"id": 55,
+"title": "Hable con ella",
+"year": 2002,
+"duration": 112,
+"director": "Pedro Almodóvar",
+"country": "España",
+"genres": [
+"drama",
+"romance"
+],
+"mood": [
+"emocionar",
+"pensar"
+],
+"audience": [
+"solo",
+"pareja"
+],
+"rating": 7.9,
+"platforms": [
+"filmin"
+],
+"poster": "https://image.tmdb.org/t/p/w500/d6tIQ6mGGHbDoNF1OXuCB5eYxJN.jpg",
+"synopsis": "Dos hombres cuidan de mujeres en coma y construyen una amistad. Almodóvar en su madurez.",
+"tags": [
+"coma",
+"amistad masculina",
+"cuidado",
+"almodóvar",
+"soledad",
+"amor extraño"
+]
+},
+{
+"id": 56,
+"title": "El infiltrado",
+"original": "The Departed",
+"year": 2006,
+"duration": 151,
+"director": "Martin Scorsese",
+"country": "EE.UU.",
+"genres": [
+"thriller",
+"drama",
+"accion"
+],
+"mood": [
+"tension",
+"adrenalina"
+],
+"audience": [
+"solo",
+"amigos"
+],
+"rating": 8.5,
+"platforms": [
+"movistar"
+],
+"poster": "https://image.tmdb.org/t/p/w500/nT97ifVT2J1yMQmeq20Qblg61T.jpg",
+"synopsis": "Un policía infiltrado y un mafioso topo se cazan mutuamente. Scorsese al máximo.",
+"tags": [
+"policía infiltrado",
+"mafia",
+"boston",
+"topo",
+"identidad",
+"irlandeses"
+]
+},
+{
+"id": 57,
+"title": "Toy Story 3",
+"year": 2010,
+"duration": 103,
+"director": "Lee Unkrich",
+"country": "EE.UU.",
+"genres": [
+"animacion",
+"familia",
+"aventura"
+],
+"mood": [
+"emocionar",
+"ligero"
+],
+"audience": [
+"familia",
+"cualquiera"
+],
+"rating": 8.3,
+"platforms": [
+"disney"
+],
+"poster": "https://image.tmdb.org/t/p/w500/AbbXspMOwdvwWZgVN0nabZq03Ec.jpg",
+"synopsis": "Andy va a la universidad y deja a sus juguetes. Final emocional perfecto.",
+"tags": [
+"juguetes",
+"guardería",
+"cárcel",
+"huída",
+"crecer",
+"despedida"
+]
+},
+{
+"id": 58,
+"title": "Logan",
+"year": 2017,
+"duration": 137,
+"director": "James Mangold",
+"country": "EE.UU.",
+"genres": [
+"accion",
+"drama"
+],
+"mood": [
+"emocionar",
+"adrenalina",
+"tension"
+],
+"audience": [
+"solo",
+"amigos"
+],
+"rating": 8.1,
+"platforms": [
+"disney"
+],
+"poster": "https://image.tmdb.org/t/p/w500/fnbjcRDYn6YviCcePDnGdyAkYsB.jpg",
+"synopsis": "Un Wolverine envejecido protege a una niña mutante. Despedida adulta y violenta.",
+"tags": [
+"mutantes",
+"wolverine",
+"futuro distópico",
+"niña",
+"road movie",
+"vejez"
+]
+},
+{
+"id": 59,
+"title": "La vida es bella",
+"original": "La vita è bella",
+"year": 1997,
+"duration": 116,
+"director": "Roberto Benigni",
+"country": "Italia",
+"genres": [
+"drama",
+"comedia",
+"romance"
+],
+"mood": [
+"emocionar",
+"reir"
+],
+"audience": [
+"familia",
+"pareja"
+],
+"rating": 8.6,
+"platforms": [
+"prime"
+],
+"poster": "https://image.tmdb.org/t/p/w500/74hLDKjD5aGYOotO6esUVaeISa2.jpg",
+"synopsis": "Un padre judío inventa un juego para proteger a su hijo del horror nazi. Te romperá.",
+"tags": [
+"holocausto",
+"nazis",
+"padre e hijo",
+"fingir",
+"amor familiar",
+"tragicomedia"
+]
+},
+{
+"id": 60,
+"title": "La forma del agua",
+"original": "The Shape of Water",
+"year": 2017,
+"duration": 123,
+"director": "Guillermo del Toro",
+"country": "EE.UU.",
+"genres": [
+"fantasia",
+"romance",
+"drama"
+],
+"mood": [
+"emocionar",
+"escapar"
+],
+"audience": [
+"pareja",
+"solo"
+],
+"rating": 7.3,
+"platforms": [
+"disney"
+],
+"poster": "https://image.tmdb.org/t/p/w500/9zfwPffUXpBrEP26yp0q1CkEDOe.jpg",
+"synopsis": "Una limpiadora muda se enamora de una criatura acuática. Cuento adulto premiado con Oscar.",
+"tags": [
+"criatura",
+"amor extraño",
+"guerra fría",
+"muda",
+"agua",
+"cuento adulto"
+]
+},
+{
+"id": 61,
+"title": "Trainspotting",
+"year": 1996,
+"duration": 94,
+"director": "Danny Boyle",
+"country": "Reino Unido",
+"genres": [
+"drama",
+"comedia"
+],
+"mood": [
+"tension",
+"pensar",
+"reir"
+],
+"audience": [
+"solo",
+"amigos"
+],
+"rating": 8.1,
+"platforms": [
+"movistar"
+],
+"poster": "https://image.tmdb.org/t/p/w500/3UNcGSemHRPlFwzNQZGTKfRsipa.jpg",
+"synopsis": "Un grupo de yonkis en Edimburgo. Vital, despiadada y eléctrica.",
+"tags": [
+"heroína",
+"drogas",
+"edimburgo",
+"amistad",
+"autodestrucción",
+"juventud"
+]
+},
+{
+"id": 62,
+"title": "Toy Story 4",
+"year": 2019,
+"duration": 100,
+"director": "Josh Cooley",
+"country": "EE.UU.",
+"genres": [
+"animacion",
+"familia",
+"aventura"
+],
+"mood": [
+"ligero",
+"emocionar"
+],
+"audience": [
+"familia"
+],
+"rating": 7.7,
+"platforms": [
+"disney"
+],
+"poster": "https://image.tmdb.org/t/p/w500/w9kR8qbmQ01HwnvK4alvnQ2ca0L.jpg",
+"synopsis": "Forky se une al grupo y Woody encuentra un viejo amor. Cierre cálido.",
+"tags": [
+"juguetes",
+"feria",
+"forky",
+"identidad",
+"amor reencontrado"
+]
+},
+{
+"id": 63,
+"title": "Mr. Nobody",
+"year": 2009,
+"duration": 141,
+"director": "Jaco Van Dormael",
+"country": "Bélgica",
+"genres": [
+"cienciaficcion",
+"drama",
+"romance"
+],
+"mood": [
+"pensar",
+"emocionar"
+],
+"audience": [
+"solo",
+"pareja"
+],
+"rating": 7.8,
+"platforms": [
+"filmin"
+],
+"poster": "https://image.tmdb.org/t/p/w500/zCsApDhRvKKLOg17xX8WAHMTjLP.jpg",
+"synopsis": "El último mortal recuerda todas las vidas que pudo haber vivido. Joya de culto.",
+"tags": [
+"vidas paralelas",
+"amor",
+"tiempo",
+"multiverso",
+"memoria",
+"inmortalidad"
+]
+},
+{
+"id": 64,
+"title": "Akira",
+"year": 1988,
+"duration": 124,
+"director": "Katsuhiro Otomo",
+"country": "Japón",
+"genres": [
+"animacion",
+"cienciaficcion",
+"accion"
+],
+"mood": [
+"adrenalina",
+"pensar",
+"tension"
+],
+"audience": [
+"solo",
+"amigos"
+],
+"rating": 8.0,
+"platforms": [
+"filmin"
+],
+"poster": "https://image.tmdb.org/t/p/w500/neZ0ykcsosgQGbAyG3wIo0OVw2j.jpg",
+"synopsis": "Neo-Tokio postapocalíptica y un poder psíquico desatado. Anime que definió un género.",
+"tags": [
+"anime",
+"neo-tokio",
+"motos",
+"poderes psíquicos",
+"distopía",
+"postapocalíptico"
+]
+},
+{
+"id": 65,
+"title": "El club de los poetas muertos",
+"original": "Dead Poets Society",
+"year": 1989,
+"duration": 128,
+"director": "Peter Weir",
+"country": "EE.UU.",
+"genres": [
+"drama"
+],
+"mood": [
+"emocionar",
+"pensar"
+],
+"audience": [
+"familia",
+"solo"
+],
+"rating": 8.1,
+"platforms": [
+"disney"
+],
+"poster": "https://image.tmdb.org/t/p/w500/1jeC0vOmtxPzQcrA8gyfTsd6FNV.jpg",
+"synopsis": "Un profesor inspira a alumnos en un internado conservador. 'Oh capitán, mi capitán'.",
+"tags": [
+"profesor",
+"internado",
+"poesía",
+"rebeldía juvenil",
+"inspiración",
+"suicidio adolescente"
+]
+},
+{
+"id": 66,
+"title": "Annihilation",
+"year": 2018,
+"duration": 115,
+"director": "Alex Garland",
+"country": "EE.UU.",
+"genres": [
+"cienciaficcion",
+"terror",
+"thriller"
+],
+"mood": [
+"tension",
+"pensar"
+],
+"audience": [
+"solo",
+"pareja"
+],
+"rating": 6.8,
+"platforms": [
+"netflix"
+],
+"poster": "https://image.tmdb.org/t/p/w500/d3qcpvNZGl8vDBxKkSCw6tPLAcb.jpg",
+"synopsis": "Una bióloga entra en una zona donde las reglas naturales cambian. Sci-fi inquietante y bella.",
+"tags": [
+"biología",
+"zona alienígena",
+"expedición femenina",
+"mutación",
+"naturaleza",
+"misterio"
+]
+},
+{
+"id": 67,
+"title": "El gran Lebowski",
+"original": "The Big Lebowski",
+"year": 1998,
+"duration": 117,
+"director": "Hermanos Coen",
+"country": "EE.UU.",
+"genres": [
+"comedia"
+],
+"mood": [
+"reir",
+"ligero",
+"escapar"
+],
+"audience": [
+"amigos",
+"solo"
+],
+"rating": 8.1,
+"platforms": [
+"netflix"
+],
+"poster": "https://image.tmdb.org/t/p/w500/d4ftZQAJplymZmIZMrRzwUHaHwo.jpg",
+"synopsis": "El Nota se ve envuelto en un secuestro absurdo. Bolos, ruso blanco y filosofía hippie.",
+"tags": [
+"bolos",
+"hippie",
+"malentendido",
+"los angeles",
+"absurdo",
+"culto"
+]
+},
+{
+"id": 68,
+"title": "Aladdin",
+"year": 1992,
+"duration": 90,
+"director": "Ron Clements, John Musker",
+"country": "EE.UU.",
+"genres": [
+"animacion",
+"familia",
+"aventura",
+"romance"
+],
+"mood": [
+"ligero",
+"reir",
+"escapar"
+],
+"audience": [
+"familia"
+],
+"rating": 7.6,
+"platforms": [
+"disney"
+],
+"poster": "https://image.tmdb.org/t/p/w500/dbg6tjMtq3BFGgZpyArtwRCGD0J.jpg",
+"synopsis": "Un ladronzuelo y un genio salvan Agrabah. Robin Williams improvisando, eterno.",
+"tags": [
+"genio",
+"lámpara",
+"príncipe",
+"desierto",
+"magia",
+"cuento árabe"
+]
+},
+{
+"id": 69,
+"title": "Sicario",
+"year": 2015,
+"duration": 121,
+"director": "Denis Villeneuve",
+"country": "EE.UU.",
+"genres": [
+"thriller",
+"accion",
+"drama"
+],
+"mood": [
+"tension"
+],
+"audience": [
+"solo",
+"amigos"
+],
+"rating": 7.6,
+"platforms": [
+"movistar"
+],
+"poster": "https://image.tmdb.org/t/p/w500/oRkv2gMrlAUMs0xtgmZBGjuq1Lc.jpg",
+"synopsis": "Una agente del FBI entra en operaciones contra cárteles mexicanos. Tensa sin alivio.",
+"tags": [
+"narcotráfico",
+"cártel",
+"frontera méxico",
+"fbi",
+"moral",
+"violencia"
+]
+},
+{
+"id": 70,
+"title": "Soul",
+"year": 2020,
+"duration": 100,
+"director": "Pete Docter",
+"country": "EE.UU.",
+"genres": [
+"animacion",
+"familia",
+"drama",
+"fantasia"
+],
+"mood": [
+"emocionar",
+"pensar",
+"ligero"
+],
+"audience": [
+"familia",
+"pareja",
+"cualquiera"
+],
+"rating": 8.0,
+"platforms": [
+"disney"
+],
+"poster": "https://image.tmdb.org/t/p/w500/hm58Jw4Lw8OIeECIq5qyPYhAeRJ.jpg",
+"synopsis": "Un profesor de música muere y debe volver. Pixar reflexiona sobre el sentido de la vida.",
+"tags": [
+"música",
+"jazz",
+"sentido de la vida",
+"muerte",
+"almas",
+"profesor"
+]
+},
+{
+"id": 71,
+"title": "El protegido",
+"original": "Unbreakable",
+"year": 2000,
+"duration": 106,
+"director": "M. Night Shyamalan",
+"country": "EE.UU.",
+"genres": [
+"drama",
+"thriller",
+"cienciaficcion"
+],
+"mood": [
+"pensar",
+"tension"
+],
+"audience": [
+"solo",
+"pareja"
+],
+"rating": 7.3,
+"platforms": [
+"disney"
+],
+"poster": "https://image.tmdb.org/t/p/w500/jUu3p2QSXrjWHRpVbXMLI74V0Q3.jpg",
+"synopsis": "Un guarda sobrevive a un accidente sin un rasguño. Superhéroes desde lo mundano.",
+"tags": [
+"superhéroe",
+"realismo",
+"comic",
+"fragilidad",
+"destino",
+"shyamalan"
+]
+},
+{
+"id": 72,
+"title": "En busca de la felicidad",
+"original": "The Pursuit of Happyness",
+"year": 2006,
+"duration": 117,
+"director": "Gabriele Muccino",
+"country": "EE.UU.",
+"genres": [
+"drama",
+"biografico"
+],
+"mood": [
+"emocionar"
+],
+"audience": [
+"familia",
+"pareja"
+],
+"rating": 8.0,
+"platforms": [
+"netflix"
+],
+"poster": "https://image.tmdb.org/t/p/w500/2KQTU2hCpKCJpkBT0iREBN6Yyok.jpg",
+"synopsis": "Un padre sin techo lucha por sacar a su hijo adelante. Will Smith desnudo emocionalmente.",
+"tags": [
+"padre e hijo",
+"pobreza",
+"sin techo",
+"wall street",
+"superación",
+"bolsa"
+]
+},
+{
+"id": 73,
+"title": "V de Vendetta",
+"original": "V for Vendetta",
+"year": 2005,
+"duration": 132,
+"director": "James McTeigue",
+"country": "EE.UU.",
+"genres": [
+"accion",
+"drama",
+"cienciaficcion"
+],
+"mood": [
+"adrenalina",
+"pensar"
+],
+"audience": [
+"solo",
+"amigos"
+],
+"rating": 8.1,
+"platforms": [
+"hbo"
+],
+"poster": "https://image.tmdb.org/t/p/w500/oOilGOaQyOd0FtJYUHdtNzZ8mGr.jpg",
+"synopsis": "Un enmascarado se rebela contra un futuro fascista británico. Recordad el 5 de noviembre.",
+"tags": [
+"fascismo",
+"rebelión",
+"máscara",
+"reino unido distópico",
+"libertad",
+"venganza"
+]
+},
+{
+"id": 74,
+"title": "Mejor imposible",
+"original": "As Good as It Gets",
+"year": 1997,
+"duration": 139,
+"director": "James L. Brooks",
+"country": "EE.UU.",
+"genres": [
+"comedia",
+"drama",
+"romance"
+],
+"mood": [
+"reir",
+"emocionar"
+],
+"audience": [
+"pareja",
+"solo"
+],
+"rating": 7.7,
+"platforms": [
+"movistar"
+],
+"poster": "https://image.tmdb.org/t/p/w500/6oWUbWCD8K3yTBg0xZ8gIPgGYcN.jpg",
+"synopsis": "Un escritor obsesivo-compulsivo cambia gracias a una camarera y un vecino. Tres Oscars.",
+"tags": [
+"toc",
+"escritor",
+"perro",
+"camarera",
+"amor improbable",
+"amistad"
+]
+},
+{
+"id": 75,
+"title": "Solo en casa",
+"original": "Home Alone",
+"year": 1990,
+"duration": 103,
+"director": "Chris Columbus",
+"country": "EE.UU.",
+"genres": [
+"comedia",
+"familia"
+],
+"mood": [
+"reir",
+"ligero"
+],
+"audience": [
+"familia"
+],
+"rating": 7.7,
+"platforms": [
+"disney"
+],
+"poster": "https://image.tmdb.org/t/p/w500/onTSipZ8R3bliBdKfPtsDuHTdlL.jpg",
+"synopsis": "Un niño olvidado en casa defiende su hogar de ladrones torpes. Navidad obligatoria.",
+"tags": [
+"navidad",
+"niño solo",
+"ladrones",
+"trampas",
+"casa",
+"familia"
+]
+},
+{
+"id": 76,
+"title": "Wall·E",
+"year": 2008,
+"duration": 98,
+"director": "Andrew Stanton",
+"country": "EE.UU.",
+"genres": [
+"animacion",
+"cienciaficcion",
+"familia",
+"romance"
+],
+"mood": [
+"emocionar",
+"escapar",
+"ligero"
+],
+"audience": [
+"familia",
+"cualquiera"
+],
+"rating": 8.4,
+"platforms": [
+"disney"
+],
+"poster": "https://image.tmdb.org/t/p/w500/hbhFnRzzg6ZDmm8YAmxBnQpQIPh.jpg",
+"synopsis": "Un robot solitario limpia una Tierra abandonada y encuentra el amor. Casi sin diálogo, pura ternura.",
+"tags": [
+"robot",
+"tierra abandonada",
+"amor",
+"basura",
+"distopía",
+"soledad"
+]
+},
+{
+"id": 77,
+"title": "Snatch: Cerdos y diamantes",
+"original": "Snatch",
+"year": 2000,
+"duration": 104,
+"director": "Guy Ritchie",
+"country": "Reino Unido",
+"genres": [
+"comedia",
+"accion",
+"thriller"
+],
+"mood": [
+"reir",
+"adrenalina"
+],
+"audience": [
+"amigos"
+],
+"rating": 8.2,
+"platforms": [
+"movistar"
+],
+"poster": "https://image.tmdb.org/t/p/w500/56mOJth6DJ6JhgoE2jtpilVqJO.jpg",
+"synopsis": "Atracadores, gitanos y un diamante perdido en Londres. Diálogo trepidante.",
+"tags": [
+"atracadores",
+"gitanos",
+"diamante",
+"londres",
+"apuestas",
+"humor negro"
+]
+},
+{
+"id": 78,
+"title": "La isla de los perros",
+"original": "Isle of Dogs",
+"year": 2018,
+"duration": 101,
+"director": "Wes Anderson",
+"country": "EE.UU.",
+"genres": [
+"animacion",
+"aventura",
+"comedia"
+],
+"mood": [
+"ligero",
+"pensar",
+"emocionar"
+],
+"audience": [
+"familia",
+"pareja",
+"solo"
+],
+"rating": 7.9,
+"platforms": [
+"disney"
+],
+"poster": "https://image.tmdb.org/t/p/w500/eVtuiVUiMNuiEnVcfVHTHTzdYU3.jpg",
+"synopsis": "Perros exiliados a una isla en un Japón distópico. Stop-motion delicioso.",
+"tags": [
+"perros",
+"japón",
+"isla",
+"distopía",
+"stop motion",
+"niño"
+]
+},
+{
+"id": 79,
+"title": "Pequeña Miss Sunshine",
+"original": "Little Miss Sunshine",
+"year": 2006,
+"duration": 101,
+"director": "Dayton, Faris",
+"country": "EE.UU.",
+"genres": [
+"comedia",
+"drama"
+],
+"mood": [
+"reir",
+"emocionar",
+"ligero"
+],
+"audience": [
+"familia",
+"pareja",
+"amigos"
+],
+"rating": 7.8,
+"platforms": [
+"disney"
+],
+"poster": "https://image.tmdb.org/t/p/w500/wK37AKKMaLU4tnUgYjJOA3v2RHE.jpg",
+"synopsis": "Una familia disfuncional viaja en furgoneta a un concurso de belleza infantil. Indie perfecta.",
+"tags": [
+"familia disfuncional",
+"concurso belleza",
+"road movie",
+"furgoneta",
+"fracaso"
+]
+},
+{
+"id": 80,
+"title": "Mátrix Resurrections",
+"original": "The Matrix Resurrections",
+"year": 2021,
+"duration": 148,
+"director": "Lana Wachowski",
+"country": "EE.UU.",
+"genres": [
+"cienciaficcion",
+"accion"
+],
+"mood": [
+"pensar",
+"adrenalina"
+],
+"audience": [
+"solo",
+"amigos"
+],
+"rating": 5.7,
+"platforms": [
+"hbo"
+],
+"poster": "https://image.tmdb.org/t/p/w500/8c4a8kE7PizaGQQnditMmI1xbRp.jpg",
+"synopsis": "Neo regresa a la Matrix décadas después. Reflexiva y metaficcional.",
+"tags": [
+"matrix",
+"metaficción",
+"amor reencontrado",
+"simulación",
+"mayor"
+]
+}
+]

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FilmPick</title>
+  <meta name="description" content="" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .lang-switcher {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      margin-left: 8px;
+    }
+    .lang-btn {
+      background: none;
+      border: 1px solid var(--border, rgba(255,255,255,0.15));
+      color: var(--text-dim, #888);
+      border-radius: 4px;
+      padding: 2px 7px;
+      font-size: 11px;
+      font-family: inherit;
+      cursor: pointer;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      transition: all .2s;
+    }
+    .lang-btn:hover { color: var(--text, #fff); border-color: var(--text-dim, #888); }
+    .lang-btn.active { color: var(--accent, #e50914); border-color: var(--accent, #e50914); font-weight: 700; }
+    .onboarding-lang {
+      justify-content: center;
+      margin: 0 0 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- =================== ONBOARDING / LOGIN =================== -->
+  <div id="onboarding" class="onboarding">
+    <div class="onboarding-card">
+      <div class="lang-switcher onboarding-lang" id="lang-switcher-onboarding"></div>
+      <div class="brand-mark">
+        <span class="logo-symbol">▶</span>
+        <span class="logo-text">FilmPick</span>
+      </div>
+      <p class="onboarding-tag" data-i18n="onboardingTag"></p>
+      <h1 class="onboarding-title" data-i18n="onboardingTitle"></h1>
+      <p class="onboarding-sub" data-i18n="onboardingSub"></p>
+      <form id="onboarding-form" class="onboarding-form" autocomplete="off">
+        <input type="text" id="username-input" data-i18n-placeholder="onboardingPlaceholder" maxlength="20" required />
+        <button type="submit" data-i18n="onboardingBtn"></button>
+      </form>
+      <p class="onboarding-foot" data-i18n="onboardingFoot"></p>
+    </div>
+  </div>
+
+  <!-- =================== APP PRINCIPAL =================== -->
+  <div id="app" class="app hidden">
+
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header-inner">
+        <div class="brand-mark small">
+          <span class="logo-symbol">▶</span>
+          <span class="logo-text">FilmPick</span>
+        </div>
+        <nav class="nav-tabs">
+          <button class="tab active" data-view="discover"><span class="tab-num">01</span><span data-i18n="tabDiscover"></span></button>
+          <button class="tab" data-view="roulette"><span class="tab-num">02</span><span data-i18n="tabRoulette"></span></button>
+          <button class="tab" data-view="favorites"><span class="tab-num">03</span><span data-i18n="tabFavorites"></span></button>
+          <button class="tab" data-view="watched"><span class="tab-num">04</span><span data-i18n="tabWatched"></span></button>
+        </nav>
+        <div class="user-pill">
+          <span class="user-avatar" id="user-avatar">?</span>
+          <span class="user-name" id="user-name">—</span>
+          <button class="user-logout" id="logout-btn" data-i18n-title="logoutTitle">⏻</button>
+          <div class="lang-switcher" id="lang-switcher"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ============== VISTA: DESCUBRIR ============== -->
+    <section class="view active" id="view-discover">
+      <div class="hero">
+        <div class="hero-grid">
+          <div>
+            <p class="hero-eyebrow"><span data-i18n="heroEyebrow"></span> <span id="hero-name">—</span></p>
+            <h2 class="hero-title" data-i18n="heroTitle"></h2>
+            <p class="hero-text" data-i18n="heroText"></p>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-block">
+              <span class="stat-num" id="stat-total">—</span>
+              <span class="stat-label" data-i18n="statCurated"></span>
+            </div>
+            <div class="stat-block">
+              <span class="stat-num" id="stat-tmdb">∞</span>
+              <span class="stat-label" data-i18n="statTmdb"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FILTROS -->
+      <div class="filters">
+        <div class="filter-block">
+          <h3 class="filter-title"><span class="filter-num">①</span><span data-i18n="f1Title"></span></h3>
+          <div class="chips" data-group="audience" data-mode="single">
+            <span class="chip" data-v="solo" data-i18n="f1Solo"></span>
+            <span class="chip" data-v="pareja" data-i18n="f1Pareja"></span>
+            <span class="chip" data-v="familia" data-i18n="f1Familia"></span>
+            <span class="chip" data-v="amigos" data-i18n="f1Amigos"></span>
+            <span class="chip" data-v="cualquiera" data-i18n="f1Cualquiera"></span>
+          </div>
+        </div>
+
+        <div class="filter-block">
+          <h3 class="filter-title"><span class="filter-num">②</span><span data-i18n="f2Title"></span></h3>
+          <div class="chips" data-group="mood" data-mode="multi">
+            <span class="chip" data-v="ligero" data-i18n="f2Ligero"></span>
+            <span class="chip" data-v="reir" data-i18n="f2Reir"></span>
+            <span class="chip" data-v="emocionar" data-i18n="f2Emocionar"></span>
+            <span class="chip" data-v="pensar" data-i18n="f2Pensar"></span>
+            <span class="chip" data-v="adrenalina" data-i18n="f2Adrenalina"></span>
+            <span class="chip" data-v="tension" data-i18n="f2Tension"></span>
+            <span class="chip" data-v="escapar" data-i18n="f2Escapar"></span>
+          </div>
+        </div>
+
+        <div class="filter-block">
+          <h3 class="filter-title"><span class="filter-num">③</span><span data-i18n="f3Title"></span></h3>
+          <div class="chips" data-group="genres" data-mode="multi">
+            <span class="chip" data-v="comedia"       data-i18n="gComedia"></span>
+            <span class="chip" data-v="drama"         data-i18n="gDrama"></span>
+            <span class="chip" data-v="accion"        data-i18n="gAccion"></span>
+            <span class="chip" data-v="thriller"      data-i18n="gThriller"></span>
+            <span class="chip" data-v="terror"        data-i18n="gTerror"></span>
+            <span class="chip" data-v="romance"       data-i18n="gRomance"></span>
+            <span class="chip" data-v="cienciaficcion" data-i18n="gCienciaficcion"></span>
+            <span class="chip" data-v="fantasia"      data-i18n="gFantasia"></span>
+            <span class="chip" data-v="animacion"     data-i18n="gAnimacion"></span>
+            <span class="chip" data-v="documental"    data-i18n="gDocumental"></span>
+            <span class="chip" data-v="biografico"    data-i18n="gBiografico"></span>
+            <span class="chip" data-v="aventura"      data-i18n="gAventura"></span>
+            <span class="chip" data-v="familia"       data-i18n="gFamilia"></span>
+          </div>
+        </div>
+
+        <div class="filter-row-2">
+          <div class="filter-block">
+            <h3 class="filter-title"><span class="filter-num">④</span><span data-i18n="f4Title"></span></h3>
+            <div class="slider-row">
+              <input type="range" id="duration-slider" min="80" max="200" value="200" step="5" />
+              <span class="slider-out" id="duration-out"></span>
+            </div>
+          </div>
+          <div class="filter-block">
+            <h3 class="filter-title"><span class="filter-num">⑤</span><span data-i18n="f5Title"></span></h3>
+            <div class="slider-row">
+              <input type="range" id="year-slider" min="1930" max="2025" value="1930" step="1" />
+              <span class="slider-out" id="year-out"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="filter-block">
+          <h3 class="filter-title"><span class="filter-num">⑥</span><span data-i18n="f6Title"></span> <span class="filter-optional" data-i18n="f6Optional"></span></h3>
+          <div class="keyword-row">
+            <input type="text" id="keyword-input" data-i18n-placeholder="f6Placeholder" maxlength="40" />
+            <button type="button" class="btn-clear-kw" id="keyword-clear" title="✕">✕</button>
+          </div>
+          <p class="filter-hint" data-i18n="f6Hint"></p>
+        </div>
+
+        <div class="filter-block">
+          <h3 class="filter-title"><span class="filter-num">⑦</span><span data-i18n="f7Title"></span></h3>
+          <div class="chips" data-group="platforms" data-mode="multi">
+            <span class="chip platform" data-v="netflix">Netflix</span>
+            <span class="chip platform" data-v="prime">Prime Video</span>
+            <span class="chip platform" data-v="disney">Disney+</span>
+            <span class="chip platform" data-v="hbo">HBO Max</span>
+            <span class="chip platform" data-v="apple">Apple TV+</span>
+            <span class="chip platform" data-v="filmin">Filmin</span>
+            <span class="chip platform" data-v="movistar">Movistar+</span>
+            <span class="chip platform" data-v="skyshowtime">SkyShowtime</span>
+          </div>
+        </div>
+
+        <div class="filter-block">
+          <h3 class="filter-title"><span class="filter-num">⑧</span><span data-i18n="f8Title"></span></h3>
+          <div class="chips" data-group="source" data-mode="single">
+            <span class="chip active" data-v="local" data-i18n="srcLocal"></span>
+            <span class="chip" data-v="tmdb" data-i18n="srcTmdb"></span>
+          </div>
+          <p class="filter-hint" id="tmdb-hint" style="display:none;" data-i18n="tmdbHint"></p>
+        </div>
+
+        <div class="actions-row">
+          <button class="btn-primary" id="search-btn" data-i18n="btnSearch"></button>
+          <button class="btn-ghost" id="reset-btn" data-i18n="btnReset"></button>
+          <span class="filter-counter" id="filter-counter"></span>
+        </div>
+      </div>
+
+      <!-- RESULTADOS -->
+      <div class="results" id="results">
+        <div class="results-empty">
+          <p data-i18n="resultsEmpty"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== VISTA: RULETA ============== -->
+    <section class="view" id="view-roulette">
+      <div class="roulette-wrap">
+        <p class="hero-eyebrow" data-i18n="rouletteEyebrow"></p>
+        <h2 class="hero-title" data-i18n="rouletteTitle"></h2>
+        <p class="hero-text" data-i18n="rouletteText"></p>
+
+        <button class="btn-big" id="spin-btn">
+          <span class="spin-icon">◉</span>
+          <span data-i18n="rouletteBtn"></span>
+        </button>
+
+        <div class="roulette-result" id="roulette-result"></div>
+      </div>
+    </section>
+
+    <!-- ============== VISTA: FAVORITOS ============== -->
+    <section class="view" id="view-favorites">
+      <p class="hero-eyebrow" data-i18n="favEyebrow"></p>
+      <h2 class="hero-title" data-i18n="favTitle"></h2>
+      <p class="hero-text" data-i18n="favText"></p>
+      <div class="results" id="favorites-list"></div>
+    </section>
+
+    <!-- ============== VISTA: YA VISTAS ============== -->
+    <section class="view" id="view-watched">
+      <p class="hero-eyebrow" data-i18n="watchedEyebrow"></p>
+      <h2 class="hero-title" data-i18n="watchedTitle"></h2>
+      <p class="hero-text" data-i18n="watchedText"></p>
+      <div class="results" id="watched-list"></div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <span data-i18n="footerLeft"></span>
+      <span data-i18n="footerRight"></span>
+    </footer>
+
+  </div>
+
+  <!-- ============== MODAL DETALLE ============== -->
+  <div class="modal" id="modal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content" id="modal-content"></div>
+  </div>
+
+  <!-- ============== MODAL COMPARTIR ============== -->
+  <div class="modal" id="share-modal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content share-content">
+      <h3 data-i18n="shareTitle"></h3>
+      <p data-i18n="shareText"></p>
+      <div class="share-link-row">
+        <input type="text" id="share-link" readonly />
+        <button id="copy-link-btn" data-i18n="shareCopy"></button>
+      </div>
+      <button class="btn-ghost close-share" id="close-share" data-i18n="shareClose"></button>
+    </div>
+  </div>
+
+  <!-- ============== TOAST ============== -->
+  <div class="toast" id="toast"></div>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/tmdb.js"></script>
+  <script src="data/movies.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

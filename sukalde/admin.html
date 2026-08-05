@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="adm_title">Sukalde · Mis recetas</title>
+<link rel="stylesheet" href="css/style.css?v=10">
+<script src="js/i18n.js?v=10"></script>
+<style>
+  .admin{max-width:680px;margin:0 auto;padding:20px 18px}
+  .volver-app{display:inline-block;margin-bottom:16px;color:var(--rust-dark);font-weight:600;text-decoration:none}
+  .form-row{margin-bottom:14px}
+  .form-row label{display:block;font-size:12.5px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--olive);margin-bottom:6px}
+  .form-row input,.form-row textarea,.form-row select{width:100%;padding:11px 14px;border:1.5px solid var(--line);border-radius:10px;font-size:14px;font-family:'Archivo',sans-serif;outline:none;background:var(--paper)}
+  .form-row input:focus,.form-row textarea:focus{border-color:var(--rust)}
+  .dos{display:flex;gap:10px}
+  .dos>div{flex:1}
+  .hint{font-size:12px;color:var(--muted);margin-top:4px}
+  .guardar{width:100%;padding:15px;border:none;border-radius:14px;background:linear-gradient(135deg,var(--rust),var(--rust-dark));color:#fff;font-size:16px;font-weight:700;cursor:pointer;margin-top:8px}
+  .msg{margin-top:14px;padding:13px 16px;border-radius:12px;text-align:center;font-weight:600;display:none}
+  .msg.ok{background:#5e6b4318;color:var(--olive-dark);display:block}
+  .msg.err{background:#c0392b14;color:var(--tomato);display:block}
+  .lista-mias{margin-top:30px}
+  .mia{background:var(--paper);border:1.5px solid var(--line);border-radius:14px;padding:13px 16px;display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
+  .mia .t{font-family:'Fraunces',serif;font-weight:600;font-size:16px}
+  .mia .m{font-size:12.5px;color:var(--muted)}
+  .mia button{border:1.5px solid var(--tomato);background:#c0392b10;color:var(--tomato);width:36px;height:36px;border-radius:10px;cursor:pointer;font-size:15px}
+</style>
+</head>
+<body>
+<header style="position:relative">
+  <div class="logo" style="cursor:default">
+    <h1>Suka<span>lde</span></h1>
+  </div>
+  <p class="lema" data-i18n="adm_lema">Mis recetas</p>
+  <div class="lang" id="lang-switch" style="position:absolute;top:14px;right:18px">
+    <button data-lang="eu" onclick="setLang('eu')">EU</button>
+    <button data-lang="es" onclick="setLang('es')">ES</button>
+    <button data-lang="en" onclick="setLang('en')">EN</button>
+  </div>
+</header>
+
+<div class="admin">
+  <a class="volver-app" href="index.html" data-i18n="adm_volver">← Volver a la app</a>
+
+  <div class="panel">
+    <h2 data-i18n="adm_crear_h" style="font-family:'Fraunces',serif;font-size:22px;color:var(--ink);margin-bottom:4px">Crear una receta nueva</h2>
+    <p class="sub" data-i18n="adm_crear_sub" style="color:var(--muted);font-size:13px;margin-bottom:18px">Se guardará en tu base de datos y aparecerá en las búsquedas de la app.</p>
+
+    <div class="form-row"><label data-i18n="adm_l_titulo">Título *</label><input id="titulo" data-i18n-ph="adm_ph_titulo" placeholder="ej: Lentejas de mi abuela"></div>
+    <div class="form-row"><label data-i18n="adm_l_desc">Descripción</label><input id="descripcion" data-i18n-ph="adm_ph_desc" placeholder="Una frase corta y apetecible"></div>
+
+    <div class="dos">
+      <div class="form-row"><label data-i18n="adm_l_tiempo">Tiempo</label><input id="tiempo" data-i18n-ph="adm_ph_tiempo" placeholder="ej: 45 min" value="30 min"></div>
+      <div class="form-row"><label data-i18n="adm_l_min">Minutos (nº)</label><input id="tiempoMin" type="number" value="30"></div>
+    </div>
+    <div class="dos">
+      <div class="form-row"><label data-i18n="adm_l_dif">Dificultad</label>
+        <select id="dificultad"><option data-i18n="adm_dif_facil">Fácil</option><option data-i18n="adm_dif_media">Media</option><option data-i18n="adm_dif_dificil">Difícil</option></select></div>
+      <div class="form-row"><label data-i18n="adm_l_raciones">Raciones base</label><input id="raciones_base" type="number" value="4"></div>
+    </div>
+    <div class="dos">
+      <div class="form-row"><label data-i18n="adm_l_cocina">Cocina</label><input id="cocina" data-i18n-ph="adm_ph_cocina" placeholder="ej: Vasca, Italiana…"></div>
+      <div class="form-row"><label data-i18n="adm_l_plato">Tipo de plato</label>
+        <select id="plato"><option value="entrante" data-i18n="adm_plato_entrante">Entrante</option><option value="principal" selected data-i18n="adm_plato_principal">Principal</option><option value="postre" data-i18n="adm_plato_postre">Postre</option></select></div>
+    </div>
+
+    <div class="form-row"><label data-i18n="adm_l_ings">Ingredientes (uno por línea)</label>
+      <textarea id="ingredientes" rows="6" placeholder="300 g de lentejas&#10;1 cebolla&#10;2 zanahorias&#10;1 chorizo"></textarea>
+      <div class="hint" data-i18n="adm_hint_ings">Escribe cada ingrediente en una línea, con su cantidad delante.</div></div>
+
+    <div class="form-row"><label data-i18n="adm_l_pasos">Pasos (uno por línea)</label>
+      <textarea id="pasos" rows="6" placeholder="Pon las lentejas a remojo la noche anterior.&#10;Sofríe la cebolla y la zanahoria.&#10;Añade las lentejas y cubre con agua.&#10;Cuece 40 minutos a fuego lento."></textarea>
+      <div class="hint" data-i18n="adm_hint_pasos">Un paso por línea, en orden.</div></div>
+
+    <div class="form-row"><label data-i18n="adm_l_dietas">Etiquetas / dietas (separadas por comas)</label>
+      <input id="dietas" data-i18n-ph="adm_ph_dietas" placeholder="ej: Para carnívoros, Reconfortante, Sin gluten"></div>
+
+    <div class="form-row"><label data-i18n="adm_l_consejo">Consejo del chef</label><input id="consejo" data-i18n-ph="adm_ph_consejo" placeholder="Un truco para que salga perfecta"></div>
+
+    <button class="guardar" onclick="guardar()" data-i18n="adm_guardar">Guardar receta 💾</button>
+    <div class="msg" id="msg"></div>
+  </div>
+
+  <div class="lista-mias">
+    <h2 data-i18n="adm_mias_h" style="font-family:'Fraunces',serif;font-size:20px;color:var(--ink);margin-bottom:12px">Tus recetas guardadas</h2>
+    <div id="mias"></div>
+  </div>
+</div>
+
+<script>
+const $=s=>document.querySelector(s);
+const lineas=v=>v.split("\n").map(x=>x.trim()).filter(Boolean);
+const comas=v=>v.split(",").map(x=>x.trim()).filter(Boolean);
+
+async function guardar(){
+  const data={
+    op:"crear",
+    titulo:$("#titulo").value, descripcion:$("#descripcion").value,
+    tiempo:$("#tiempo").value, tiempoMin:parseInt($("#tiempoMin").value)||30,
+    dificultad:$("#dificultad").value, raciones_base:parseInt($("#raciones_base").value)||4,
+    cocina:$("#cocina").value, plato:$("#plato").value, consejo:$("#consejo").value,
+    ingredientes:lineas($("#ingredientes").value), pasos:lineas($("#pasos").value),
+    dietas:comas($("#dietas").value),
+  };
+  const msg=$("#msg");
+  try{
+    const res=await fetch("api/mis_recetas.php",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)});
+    const j=await res.json();
+    if(j.ok){
+      msg.className="msg ok"; msg.textContent=t("adm_ok");
+      ["titulo","descripcion","cocina","consejo","ingredientes","pasos","dietas"].forEach(id=>$("#"+id).value="");
+      cargarMias();
+    }else{ msg.className="msg err"; msg.textContent=j.error||t("adm_err_guardar"); }
+  }catch(e){ msg.className="msg err"; msg.textContent=t("adm_err_conexion"); }
+}
+
+async function cargarMias(){
+  try{
+    const res=await fetch("api/mis_recetas.php",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({op:"listar"})});
+    const j=await res.json();
+    const cont=$("#mias");
+    if(!j.ok||!j.recetas.length){cont.innerHTML='<p style="color:var(--muted);font-size:14px">'+t("adm_mias_vacio")+'</p>';return;}
+    cont.innerHTML="";
+    j.recetas.forEach(r=>{
+      const d=document.createElement("div");d.className="mia";
+      d.innerHTML=`<div><div class="t">${r.titulo}</div><div class="m">${r.cocina||"—"} · ${r.tiempo||""}</div></div>`;
+      const b=document.createElement("button");b.textContent="🗑";
+      b.onclick=async()=>{await fetch("api/mis_recetas.php",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({op:"borrar",id:r.id})});cargarMias();};
+      d.appendChild(b);cont.appendChild(d);
+    });
+  }catch(e){}
+}
+// i18n del panel admin
+function aplicarIdioma(){
+  document.querySelectorAll('[data-i18n]').forEach(elem=>{const v=t(elem.dataset.i18n); if(v!=null) elem.textContent=v;});
+  document.querySelectorAll('[data-i18n-ph]').forEach(elem=>{const v=t(elem.dataset.i18nPh); if(v!=null) elem.placeholder=v;});
+  cargarMias();
+}
+aplicarIdioma();
+</script>
+</body>
+</html>
